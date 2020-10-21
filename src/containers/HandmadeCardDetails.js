@@ -19,37 +19,21 @@ class HandmadeCardDetails extends Component {
     }
 
     render() {
+        let cardDetails=this.props.Products.HandmadeCard;
         return (
             <div className="col-md-4">
                 <div className="row justify-content-between ml-1 mb-1 mt-1">
-                    <h3 className='col-10'>{this.props.product.title}</h3>
+                    <h3 className='col-10'>{cardDetails.title}</h3>
                     
                 </div> 
-                <div className="row mb-3 ml-1">
+                {/* <div className="row mb-3 ml-1">
                     <div className='bg-primary rounded text-white ml-1'>₹{this.props.product.price}</div>
-                </div>
-                <div className="row ml-1">
-                <table className="product-details-table ">
-                    <tbody>
-                        <tr>
-                        <td className='font-weight-bold'>Brand</td>
-                        <td>{this.props.product.brand}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Color</td>
-                        <td>{this.props.product.color}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Type</td>
-                        <td>{this.props.product.type}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Category</td>
-                        <td>{this.props.product.category}</td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
+                </div> */}
+                <h3>1 kg, around 16 pieces </h3>
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
+                </p>
+                <h3>₹30</h3>
                 <div className="row">
                 <div className="row ml-1">
                     <button onClick={this.addToCart} className="btn m-1 btn-primary">
@@ -71,7 +55,8 @@ class HandmadeCardDetails extends Component {
 
 function mapStatetoProps(state){
     return({
-        cart: state.cartProducts
+        cart: state.cartProducts,
+        Products: state.Products
     });
 }
 

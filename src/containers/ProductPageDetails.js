@@ -25,39 +25,16 @@ class ProductPageDetails extends Component {
                     <h3 className='col-10'>{this.props.product.title}</h3>
                     
                 </div> 
-                <div className="row mb-3 ml-1">
+                {/* <div className="row mb-3 ml-1">
                     <div className='bg-primary rounded text-white ml-1'>₹{this.props.product.price}</div>
-                </div>
-                <div className="row ml-1">
-                <table className="product-details-table ">
-                    <tbody>
-                        <tr>
-                        <td className='font-weight-bold'>Brand</td>
-                        <td>{this.props.product.brand}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Color</td>
-                        <td>{this.props.product.color}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Type</td>
-                        <td>{this.props.product.type}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Category</td>
-                        <td>{this.props.product.category}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Sex</td>
-                        <td>{this.props.product.sex}</td>
-                        </tr>
-                        <tr>
-                        <td className='font-weight-bold'>Family</td>
-                        <td>{this.props.product.family}</td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
+                </div> */}
+                <h3>1 kg, around 16 pieces </h3>
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
+                </p>
+                <h3>₹{this.props.product.price}</h3>
+
+
                 <div className="row ml-1">
                     <button onClick={this.addToCart} className="btn m-1 btn-primary">
                         <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" />

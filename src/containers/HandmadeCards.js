@@ -19,7 +19,11 @@ class HandmadeCards extends Component{
         //         this.product = product 
         //     }
         // })
-        this.product=this.props.Products.HandmadeCard[0]
+
+    }
+
+    HandmadeCardGallery() {
+       this.product = this.props.Products.HandmadeCard
     }
 
     render(){
@@ -45,25 +49,21 @@ class HandmadeCards extends Component{
                             </Link>
                         </div> */}
                         
-                            {/* <Slider {...settings}>
-                        <div><img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/></div>
-                        <div ><img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/></div>
-                        <div><img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/></div>
-                        <div><img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/></div>
-                        <div><img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/></div>
-                    </Slider> */}
+                            <Slider {...settings}>
+                                {
+                                    this.props.Products.HandmadeProducts.map((product) => {
+                                       return(
+                                        <div><img className='img-fluid' 
+                                            src={product.image}
+                                            alt={product.title}/>
+                                        </div>
+                                       )
+                                    })
+                                }
+                                </Slider>
+                        
                     </div>
-                    <HandmadeCardDetails product={this.product}/>
+                    <HandmadeCardDetails />
                 </div>
                 <HandmadeList />
              </div>

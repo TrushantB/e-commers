@@ -741,7 +741,7 @@
  "Category":[
   {
     "id": "11963",
-    "title": "Carrot - 1 Kg",
+    "title": "Carrot",
     "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620046/dummy-products/carrots.jpg",
     "type": "JEANS",
     "category": "Bottomwear",
@@ -1052,7 +1052,7 @@
   },
   {
     "id": "9",
-    "title": "Potato - 1 Kg",
+    "title": "Potato",
     "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/potato.jpg",
     "type": "Shirts",
     "category": "Topwear",
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "226062",
-    "title": "Pumpkin - 1 Kg",
+    "title": "Pumpkin",
     "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/pumpkin.jpg",
     "type": "Shoes",
     "category": "Footwear",
@@ -1080,7 +1080,7 @@
   },
   {
     "id": "226068",
-    "title": "Corn - 1 Kg",
+    "title": "Corn",
     "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/corn.jpg",
     "type": "Shoes",
     "category": "Footwear",

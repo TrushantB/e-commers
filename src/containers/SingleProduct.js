@@ -22,7 +22,7 @@ class SingleProduct extends Component{
         return(
             <div className='container-fluid app'>
                 <div className='row'>
-                    <div className="col-md-8 p-0 bg-dark">
+                    <div className="col-md-8 p-0 ">
                         <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
