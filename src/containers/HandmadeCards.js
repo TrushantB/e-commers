@@ -8,7 +8,7 @@ import HandmadeList from './HandmadeList';
 import Header from './Header';
 import ProductList from './ProductList';
 import ProductPageDetails from './ProductPageDetails';
-
+import Slider from 'react-slick';
 
 class HandmadeCards extends Component{
 
@@ -23,6 +23,13 @@ class HandmadeCards extends Component{
     }
 
     render(){
+        let settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          };
         return(
             // <div className='container-fluid app'>
             //     <div className='row header p-3'>
@@ -40,6 +47,7 @@ class HandmadeCards extends Component{
                         <img className='img-fluid product-page-img' 
                             src={this.product.image}
                             alt={this.product.title}/>
+                            
                     </div>
                     <HandmadeCardDetails product={this.product}/>
                 </div>

@@ -1,5 +1,6 @@
 import React,{ Component} from 'react';
 import {connect} from 'react-redux';
+import CategoryItem from '../components/CategoryItem';
 
 import ProductItem from '../components/ProductItem';
 
@@ -10,7 +11,7 @@ class CategoryList extends Component{
 
         let pList = [];
         productItem.map((product)=> {
-            pList.push(<ProductItem key={product.id} product={product} page="Category"/>);
+            pList.push(<CategoryItem key={product.id} product={product} page="Category"/>);
         });
         return pList;
     }
