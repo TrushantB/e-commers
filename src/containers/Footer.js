@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom';
 class Footer extends Component {
     render() {
         return(
-        <footer className=" text-center text-lg-left site-footer text-white">
+        <footer className="text-center text-lg-left site-footer text-white py-4">
           <div className="container p-4">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <a href="#.">Flipfairy</a>
+                <a href="#." className="navbar-brand">Flipfairy</a>
               </div>
 
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase mb-0">Links</h5>
+              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <ul className="list-unstyled">
                   <li>
                     <a href="#!" className="nav-link">Product</a>
@@ -27,9 +26,7 @@ class Footer extends Component {
                 </ul>
               </div>
               
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
-
+              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <ul className="list-unstyled mb-0">
                   <li>
                     <a href="#!" className="nav-link">Terms of use</a>
@@ -43,8 +40,19 @@ class Footer extends Component {
                 </ul>
               </div>
             
-              <div className='col-lg-3 col-md-6'>
-                <div className="text-center p-3">
+              <div className='col-lg-5 col-md-6'>
+                <ul className='list-unstyled d-flex justify-content-center social-menu'>
+                  <li className='px-2'>
+                    <a href="#."><i className='fa fa-facebook'></i></a>
+                  </li>
+                  <li className='px-2'>
+                    <a href="#."><i className='fa fa-twitter'></i></a>
+                  </li>
+                  <li className='px-2'>
+                    <a href="#."><i className='fa fa-instagram'></i></a>
+                  </li>
+                </ul>
+                <div className="text-center p-3 copyright-text">
                 © 2020 Copyright:
                 <a className="text-white" href="https://flipfairy.com/">2020 © Flipfairy  All Rights Reserved</a>
               </div>

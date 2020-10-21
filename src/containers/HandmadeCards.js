@@ -39,11 +39,11 @@ class HandmadeCards extends Component{
 
                 <div className='row'>
                     <div className="col-md-8 p-0 bg-dark">
-                        <div className="back-btn">
+                        {/* <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
                             </Link>
-                        </div>
+                        </div> */}
                         
                             {/* <Slider {...settings}>
                         <div><img className='img-fluid product-page-img' 

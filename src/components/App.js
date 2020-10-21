@@ -11,22 +11,22 @@ export default class App extends Component {
       <div className='container-fluid app'>
         <Carousel />
         <div className='container'>
-          <div className='row'>
+          <div className='feature-wrapper'>
             <div className="py-4">
-              <h3 className='title'>Featured Products</h3>
+              <h3 className='title mb-3'>Featured Products</h3>
               <ProductList />
             </div>
           </div>
-          <div className='row'>
-            <h3 className='title'>Category</h3>
+          <div className='category-wrapper py-3'>
+            <h3 className='title mb-3'>Category</h3>
             <CategoryList />
           </div>
-          <div className='row'>
-            <h3 className='title'>Handmade Cards</h3>
+          <div className='handmade-wrapper py-3'>
+            <h3 className='title mb-3'>Handmade Cards</h3>
             <HandmadeCards />
           </div>
         </div>
-    </div>
+      </div>
     );
   }
 }

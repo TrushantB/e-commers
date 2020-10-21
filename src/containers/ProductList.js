@@ -19,28 +19,35 @@ class ProductList extends Component{
         this.productItems = this.createProduct(this.props.Products.Product);
         let row=[];
         for(let j=0; j<this.productItems.length; j++){
-            row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
+            row.push(<div key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
                 {this.productItems[j]}
-            </li>)
+            </div>)
         }
         return row;
     }
 
     render(){
         let settings = {
-            dots: true,
+            // dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1
           };
         return(
-            <ul className='col-md-12 col-lg-10 product-list'>
-                <Slider {...settings}>
-                {this.createGrid()}
+            <div className='col-md-12 col-lg-10 product-list'>
+               <Slider className="row" {...settings}>
+                    <div>
+                        <img width="100%" height="528px" src='https://images.unsplash.com/photo-1568045244282-e63a8b6b2b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
+                    </div>
+                    <div >
+                        <img width= "100%" height="528px" src='https://images.unsplash.com/photo-1541507638585-94ea969f4608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'/>
+                    </div>
+                    <div >
+                        <img width= "100%" height="528px" src='https://images.unsplash.com/photo-1541507638585-94ea969f4608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'/>
+                    </div>
                 </Slider>
-               
-            </ul>
+            </div>
         );
     }
 }

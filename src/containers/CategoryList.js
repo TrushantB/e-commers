@@ -29,7 +29,7 @@ class CategoryList extends Component{
 
     render(){
         return(
-            <ul className='col-md-12 col-lg-10 product-list'>
+            <ul className='row product-list'>
                 {this.createGrid()}
             </ul>
         );
