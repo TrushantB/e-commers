@@ -38,14 +38,14 @@ class HandmadeCards extends Component{
             <div>
 
                 <div className='row'>
-                    {/* <div className="col-md-8 p-0 bg-dark"> */}
-                        {/* <div className="back-btn">
+                    <div className="col-md-8 p-0 bg-dark">
+                        <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
                             </Link>
-                        </div> */}
+                        </div>
                         
-                            <Slider {...settings}>
+                            {/* <Slider {...settings}>
                         <div><img className='img-fluid product-page-img' 
                             src={this.product.image}
                             alt={this.product.title}/></div>
@@ -61,8 +61,8 @@ class HandmadeCards extends Component{
                         <div><img className='img-fluid product-page-img' 
                             src={this.product.image}
                             alt={this.product.title}/></div>
-                    </Slider>
-                    {/* </div> */}
+                    </Slider> */}
+                    </div>
                     <HandmadeCardDetails product={this.product}/>
                 </div>
                 <HandmadeList />

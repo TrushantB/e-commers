@@ -12,9 +12,9 @@ class Header extends Component{
                         <i className="fa fa-home" aria-hidden="true"></i> FlipFairy
                     </Link>
                     <div className="header-search px-5">
-                        <form class="form-inline w-100 position-relative">
-                            <input type="text" class="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
-                            <button type="submit" class="btn btn-text position-absolute btn-search">
+                        <form className="form-inline w-100 position-relative">
+                            <input type="text" className="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
+                            <button type="submit" className="btn btn-text position-absolute btn-search">
                             <i 
                                 className="fa fa-search fa-fw" 
                                 aria-hidden="true" 

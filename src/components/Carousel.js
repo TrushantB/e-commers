@@ -13,7 +13,7 @@ export default class Carousel extends Component {
       slidesToScroll: 1
     };
     return (
-      <Slider className="row" {...settings}>
+      <Slider className="row main-slider" {...settings}>
         <div>
           <img width="100%" height="528px" src='https://images.unsplash.com/photo-1568045244282-e63a8b6b2b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
         </div>

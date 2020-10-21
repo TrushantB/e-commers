@@ -10,19 +10,23 @@ export default class App extends Component {
     return (
       <div className='container-fluid app'>
         <Carousel />
-        <div className='row'>
-          <h3>Featured Products</h3>
-          <ProductList />
+        <div className='container'>
+          <div className='row'>
+            <div className="py-4">
+              <h3 className='title'>Featured Products</h3>
+              <ProductList />
+            </div>
+          </div>
+          <div className='row'>
+            <h3 className='title'>Category</h3>
+            <CategoryList />
+          </div>
+          <div className='row'>
+            <h3 className='title'>Handmade Cards</h3>
+            <HandmadeCards />
+          </div>
         </div>
-        <div className='row'>
-          <h3 >Category</h3>
-          <CategoryList />
-        </div>
-        <div className='row'>
-          <h3 >Handmade Cards</h3>
-          <HandmadeCards />
-        </div>
-        </div>
+    </div>
     );
   }
 }

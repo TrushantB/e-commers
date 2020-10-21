@@ -4,6 +4,7 @@
 :root{
     --text-color: #2E2E2E;;
     --primary:#123593;
+    --primary-light: #2E3871;
     --secondary: ;
     --white: #fff;
     --black: #444444;
@@ -98,15 +99,15 @@
 .slick-slide img{
     object-fit: cover;
 }
-.slick-slide{
+.main-slider .slick-slide{
     background: linear-gradient(225deg, #4488FF 0%, #490096 100%);
 }
-.slick-next{right: 25px;}
-.slick-prev{
+.main-slider .slick-next{right: 25px;}
+.main-slider .slick-prev{
     left: 25px;
     z-index: 1;
 }
-.slick-dots{
+.main-slider .slick-dots{
     bottom: 25px;
 }
 /* header */
@@ -136,4 +137,14 @@
 }
 .header-search .btn-search{
     right: 5px;
+}
+.title{
+    color: var(--primary-light);
+    font-size: 28px;
+}
+.site-footer{
+    background-color: #242F3F;
+}
+.site-footer a{
+    color: var(--white);
 }

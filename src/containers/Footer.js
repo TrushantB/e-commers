@@ -5,62 +5,51 @@ import { Link } from 'react-router-dom';
 class Footer extends Component {
     render() {
         return(
-            <footer class="bg-light text-center text-lg-left">
-          <div class="container p-4">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Footer Content</h5>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                  voluptatem veniam, est atque cumque eum delectus sint!
-                </p>
+        <footer className=" text-center text-lg-left site-footer text-white">
+          <div className="container p-4">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="#.">Flipfairy</a>
               </div>
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-
-                <ul class="list-unstyled mb-0">
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase mb-0">Links</h5>
+                <ul className="list-unstyled">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!" className="nav-link">Product</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!" className="nav-link">About US </a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!" className="nav-link">Contact Us</a>
                   </li>
                 </ul>
               </div>
+              
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase">Links</h5>
 
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Links</h5>
-
-                <ul class="list-unstyled">
+                <ul className="list-unstyled mb-0">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!" className="nav-link">Terms of use</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!" className="nav-link">Privacy policy</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!" className="nav-link">Cookies Policy</a>
                   </li>
                 </ul>
+              </div>
+            
+              <div className='col-lg-3 col-md-6'>
+                <div className="text-center p-3">
+                © 2020 Copyright:
+                <a className="text-white" href="https://flipfairy.com/">2020 © Flipfairy  All Rights Reserved</a>
               </div>
             </div>
-          </div>
-
-          <div class="text-center p-3">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
           </div>
         </footer>
         )
