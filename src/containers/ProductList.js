@@ -2,7 +2,7 @@ import React,{ Component} from 'react';
 import {connect} from 'react-redux';
 
 import ProductItem from '../components/ProductItem';
-
+import Slider from 'react-slick';
 
 class ProductList extends Component{
     createProduct(list){
@@ -27,9 +27,19 @@ class ProductList extends Component{
     }
 
     render(){
+        let settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1
+          };
         return(
             <ul className='col-md-12 col-lg-10 product-list'>
+                <Slider {...settings}>
                 {this.createGrid()}
+                </Slider>
+               
             </ul>
         );
     }
