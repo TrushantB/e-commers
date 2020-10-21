@@ -7,32 +7,28 @@ class Header extends Component{
     render(){
         return(
             <nav className='container'>
-                <div className='row justify-content-between'>
-                    <Link to='/' className="btn btn-primary rounded-0">
+                <div className='row justify-content-between py-4'>
+                    <Link to='/' className="navbar-brand rounded-0">
                         <i className="fa fa-home" aria-hidden="true"></i> FlipFairy
                     </Link>
-                    <span className="header-logo">
-                    <form class="form-inline">
-                        <div class="form-group mb-2">
-                        </div>
-                        <div class="form-group mb-2">
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Search product, store & seller"/>
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-2">
-                        <i 
-                        className="fa fa-search fa-fw" 
-                        aria-hidden="true" 
-                        />
-                        </button>
-                    </form>
-                    </span>
+                    <div className="header-search px-5">
+                        <form class="form-inline w-100 position-relative">
+                            <input type="text" class="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
+                            <button type="submit" class="btn btn-text position-absolute btn-search">
+                            <i 
+                                className="fa fa-search fa-fw" 
+                                aria-hidden="true" 
+                            />
+                            </button>
+                        </form>
+                    </div>
                     
-                    <Link to='/cart' className='btn float-right secondary text-white'>
+                    <Link to='/cart' className='btn float-right nav-cart position-relative'>
                         <i 
-                        className="fa fa-shopping-cart fa-fw" 
-                        aria-hidden="true" 
+                            className="fa fa-shopping-cart fa-fw" 
+                            aria-hidden="true" 
                         />
-                        <span className="badge badge-light ">{this.props.cart.length}</span>
+                        <span className="badge badge-light position-absolute">{this.props.cart.length}</span>
                     </Link>
                 </div>
             </nav>

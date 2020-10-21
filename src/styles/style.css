@@ -1,5 +1,16 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
+:root{
+    --text-color: #2E2E2E;;
+    --primary:#123593;
+    --secondary: ;
+    --white: #fff;
+    --black: #444444;
+    --danger: #FA0300;
+}
+
+
 .header-logo {
     font-size: 25px;
     font-weight: bold;
@@ -80,4 +91,49 @@
     background-color: #fff;
     border-radius: 12px;
     
+}
+
+
+/* Override Content */
+.slick-slide img{
+    object-fit: cover;
+}
+.slick-slide{
+    background: linear-gradient(225deg, #4488FF 0%, #490096 100%);
+}
+.slick-next{right: 25px;}
+.slick-prev{
+    left: 25px;
+    z-index: 1;
+}
+.slick-dots{
+    bottom: 25px;
+}
+/* header */
+.navbar-brand{
+    font-size: 24px;
+}
+.nav-cart{
+    font-size: 24px;
+    color: #5D5D5D;
+}
+.nav-cart .badge{
+    background-color: var(--danger);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    top: 8px;
+    right: 4px;
+}
+.header-search{
+    display: flex;
+    flex: 1 1 auto;
+}
+.header-search .form-control{
+    flex: 1 1 auto;
+}
+.header-search .btn-search{
+    right: 5px;
 }
