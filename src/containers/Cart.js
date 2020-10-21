@@ -12,7 +12,7 @@ class Cart extends Component{
 
     getItemById(id) {
     let obj = {};
-    this.props.products.map((item) => {
+    this.props.products.Product.map((item) => {
       if (item.id === id) {
         obj = item;
       }
@@ -53,9 +53,6 @@ class Cart extends Component{
 
         return(
             <div className='container-fluid app'>
-                <div className='row header p-3'>
-                    <Header />
-                </div>
                 <div className="row">
                         <div className="container-fluid">
                             <div className="heading">

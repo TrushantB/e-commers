@@ -4,19 +4,19 @@ import {connect} from 'react-redux';
 import ProductItem from '../components/ProductItem';
 
 
-class ProductList extends Component{
+class HandmadeList extends Component{
     createProduct(list){
         let productItem = list;
 
         let pList = [];
         productItem.map((product)=> {
-            pList.push(<ProductItem key={product.id} product={product} page="Product"/>);
+            pList.push(<ProductItem key={product.id} product={product} page="HandmadeProducts"/>);
         });
         return pList;
     }
 
     createGrid(){
-        this.productItems = this.createProduct(this.props.Products.Product);
+        this.productItems = this.createProduct(this.props.Products.HandmadeProducts);
         let row=[];
         for(let j=0; j<this.productItems.length; j++){
             row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
@@ -41,4 +41,4 @@ function mapStateToProps(state){
     });
 }
 
-export default connect(mapStateToProps)(ProductList);
+export default connect(mapStateToProps)(HandmadeList);

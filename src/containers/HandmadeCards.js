@@ -2,39 +2,49 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import HandmadeCardDetails from './HandmadeCardDetails';
+import HandmadeList from './HandmadeList';
 
 import Header from './Header';
+import ProductList from './ProductList';
 import ProductPageDetails from './ProductPageDetails';
 
 
-class SingleProduct extends Component{
+class HandmadeCards extends Component{
 
     constructor(props){
         super(props);
-        this.props.Products[this.props.match.params.key].forEach((product)=>{
-            if(product.id === this.props.match.params.id ){
-                this.product = product 
-            }
-        })
+        // this.props.Products.forEach((product)=>{
+        //     if(product.id === this.props.match.params.id ){
+        //         this.product = product 
+        //     }
+        // })
+        this.product=this.props.Products.HandmadeCard[0]
     }
 
     render(){
         return(
-            <div className='container-fluid app'>
+            // <div className='container-fluid app'>
+            //     <div className='row header p-3'>
+            //         <Header />
+            //     </div>
+            <div>
+
                 <div className='row'>
                     <div className="col-md-8 p-0 bg-dark">
-                        <div className="back-btn">
+                        {/* <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
                             </Link>
-                        </div>
+                        </div> */}
                         <img className='img-fluid product-page-img' 
                             src={this.product.image}
                             alt={this.product.title}/>
                     </div>
-                    <ProductPageDetails product={this.product}/>
+                    <HandmadeCardDetails product={this.product}/>
                 </div>
-            </div>
+                <HandmadeList />
+             </div>
         );
     }
 
@@ -46,4 +56,4 @@ function mapStateToProps(state){
     });
 }
 
-export default withRouter(connect(mapStateToProps)(SingleProduct));
+export default withRouter(connect(mapStateToProps)(HandmadeCards));
