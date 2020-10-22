@@ -19,6 +19,7 @@ import reducers from './reducers';
 import { loadState, saveState } from './localstorage';
 import Header from "./containers/Header";
 import Footer from "./containers/Footer";
+import CategoryDetails from "./containers/CategoryDetails";
 
 const persistentState = loadState();
 
@@ -43,6 +44,7 @@ ReactDOM.render(
           <Header />
             <Route exact path='/' component={App} />
             <Route exact path='/product/:key/:id' component={SingleProduct} />
+            <Route exact path='/category/:id' component={CategoryDetails} />
             <Route exact path='/cart' component={Cart} />
           <Footer />
             </div>
