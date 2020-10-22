@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import '../styles/product.css'
 
 import { addToCart } from '../actions/index';
 
@@ -28,14 +29,15 @@ class ProductPageDetails extends Component {
                 {/* <div className="row mb-3 ml-1">
                     <div className='bg-primary rounded text-white ml-1'>₹{this.props.product.price}</div>
                 </div> */}
-                <h3>1 kg, around 16 pieces </h3>
+                <h4>1 kg, around 16 pieces </h4>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.
                 </p>
                 <h3>₹{this.props.product.price}</h3>
 
 
                 <div className="row ml-1">
+                    <input type="text" class="productcount"></input>
                     <button onClick={this.addToCart} className="btn m-1 btn-primary">
                         <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" />
                         Add to cart
