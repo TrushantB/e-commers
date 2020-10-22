@@ -6,14 +6,31 @@
    
 }
 
+.slick-slide > div {
+  margin: 0 15px;
+}
+.slick-list {
+  margin: 0 -15px;
+}
+.button-left {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.button-right {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
 .Addtocart{
     font-size: 16px;
+    font-weight: bold;
 }
 .addtocartbtn{
     border-radius: 50px;
     width: 100%;
     background: linear-gradient(to right,#9656d6,#507de6);
 }
+
 .product-page-img{
     width: 100%;
     padding-right: 40px;

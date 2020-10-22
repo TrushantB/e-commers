@@ -22,7 +22,7 @@ class SingleProduct extends Component{
         return(
             <div className='container-fluid app'>
                 <div className='row'>
-                    <div className="col-md-6">
+                    <div className="col-md-6"> 
                         <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
@@ -40,12 +40,10 @@ class SingleProduct extends Component{
                                 <div className="col-4">
                                     <img className="product-page-imgtab" src={this.product.image} alt="productimg2"  />
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 mb-4">
                                     <img className="product-page-imgtab" src={this.product.image} alt="productimg3"  />
                                 </div>
                             </div>
-                    
-                        
                     </div>
                     
                     <ProductPageDetails product={this.product}/>

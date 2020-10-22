@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import ProductItem from '../components/ProductItem';
 import Slider from 'react-slick';
+import '../styles/product.css'
 import { Button } from 'bootstrap';
 
 class ProductList extends Component{
@@ -33,12 +34,12 @@ class ProductList extends Component{
           };
         return(
             <div className='col-md-12 col-lg-10 product-list'>
-                <div style={{ textAlign: "center" }}>
-                    <button className="button" onClick={this.previous}>
-                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                <div style={{ textAlign: "right"}}>
+                    <button className="button-left  mb-2" onClick={this.previous}>
+                    <i class="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
                     </button>
-                    <button className="button" onClick={this.next}>
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <button className="button-right" onClick={this.next}>
+                    <i class="fa fa-angle-right pl-2 pr-2" aria-hidden="true"></i>
                     </button>
                 </div>
 

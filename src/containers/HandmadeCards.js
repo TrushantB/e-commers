@@ -56,10 +56,10 @@ class HandmadeCards extends Component{
                             }
                         </Slider>
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6"> */}
                     <HandmadeCardDetails />
 
-                    </div>
+                    {/* </div> */}
                 </div>
                 <HandmadeList />
              </div>

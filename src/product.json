@@ -2,7 +2,7 @@
   "Product":[
   {
     "id": "11931",
-    "title": "Brocolli - 1 Kg",
+    "title": "Fresh Organic Tomatoes",
     "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
     "type": "JEANS",
     "category": "Bottomwear",
@@ -16,7 +16,7 @@
   },
   {
     "id": "11939",
-    "title": "Cauliflower - 1 Kg",
+    "title": "Croissants Puff Pastry",
     "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(1).png?alt=media&token=fa405d6d-26eb-440a-94a2-1e4a56c3d655",
     "type": "JEANS",
     "category": "Bottomwear",
@@ -30,7 +30,7 @@
   },
   {
     "id": "11947",
-    "title": "Fresh Organic Tomatoes",
+    "title": "Class A Apple Basket",
     "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(2).png?alt=media&token=bdcfcb68-37ca-4ec2-a9ac-9d1a0ebf52d9",
     "type": "JEANS",
     "category": "Bottomwear",
@@ -43,7 +43,7 @@
   },
   {
     "id": "11955",
-    "title": "Beetroot - 1 Kg",
+    "title": "Premium  Grapes",
     "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(3).png?alt=media&token=6d8fe778-a184-4411-aca7-cacaf62aa7e8",
     "type": "JEANS",
     "category": "Bottomwear",
@@ -56,14 +56,14 @@
   },
   {
     "id": "11957",
-    "title": "Tomato - 5 Kg",
-    "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/tomato.jpg",
+    "title": "Class A Tomatoes Basket",
+    "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
     "type": "JEANS",
     "category": "Bottomwear",
     "family": "casual",
     "brand": "Levis",
     "color": "Denim Blue",
-    "price": 4699,
+    "price": 46,
     "sex": "Men",
     "instock": false
   }

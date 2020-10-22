@@ -93,6 +93,15 @@
     margin-bottom: 1rem;
     background-color: transparent;
 }
+.explore{
+    border-radius: 50px;
+    width: 100%;
+    background:white;
+}
+.explore-text {
+    color: var(--black);
+    font-weight: bold;
+}
 
 .text-pink{
     color: #ff00ff;
@@ -102,7 +111,7 @@
     width: 100px;
 }
 .app {
-    /*background-color: #d4cccc;*/
+    background-color: #f8f8f8;
 }
 .card-body {
     background-color: #fff;
