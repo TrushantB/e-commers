@@ -36,7 +36,7 @@ class HandmadeCards extends Component{
             arrows:false
           };
         return(
-            // <div className='container-fluid app'>
+            // <div className=''>
             //     <div className='row header p-3'>
             //         <Header />
             //     </div>
