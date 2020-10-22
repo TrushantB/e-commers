@@ -36,13 +36,13 @@ class HandmadeCardDetails extends Component {
                 <h3>₹30</h3>
                 <div className="row">
                 <div className="row ml-1">
-                    <button onClick={this.addToCart} className="btn m-1 btn-primary">
+                    <button onClick={this.addToCart} className="btn m-1 btn-primary handmade-btn">
                         {/* <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" /> */}
                         Explore
                     </button>
                 </div>
-                <div className="row ml-5">
-                    <button onClick={this.addToCart} className="btn m-1 btn-primary">
+                <div className="row ml-5 ">
+                    <button onClick={this.addToCart} className="btn m-1 btn-primary handmade-btn">
                         {/* <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" /> */}
                         Buy Now
                     </button>
