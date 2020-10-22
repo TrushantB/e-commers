@@ -32,7 +32,8 @@ class HandmadeCards extends Component{
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows:false
           };
         return(
             // <div className='container-fluid app'>
@@ -40,30 +41,25 @@ class HandmadeCards extends Component{
             //         <Header />
             //     </div>
             <div>
-
                 <div className='row'>
-                    <div className="col-md-8 p-0 bg-dark">
-                        {/* <div className="back-btn">
-                            <Link to='/'>
-                            <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
-                            </Link>
-                        </div> */}
-                        
-                            <Slider {...settings}>
-                                {
-                                    this.props.Products.HandmadeProducts.map((product) => {
-                                       return(
-                                        <div><img className='img-fluid' 
-                                            src={product.image}
-                                            alt={product.title}/>
-                                        </div>
-                                       )
-                                    })
-                                }
-                                </Slider>
-                        
+                    <div className="col-md-6">
+                        <Slider {...settings}>
+                            {
+                                this.props.Products.HandmadeProducts.map((product) => {
+                                    return(
+                                    <div><img className='img-fluid handmade-page-img' 
+                                        src={product.image}
+                                        alt={product.title}/>
+                                    </div>
+                                    )
+                                })
+                            }
+                        </Slider>
                     </div>
+                    <div className="col-md-6">
                     <HandmadeCardDetails />
+
+                    </div>
                 </div>
                 <HandmadeList />
              </div>

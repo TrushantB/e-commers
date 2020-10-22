@@ -11,325 +11,8 @@
     "color": "Sublime Blue",
     "price": 3499,
     "sex": "Men",
-    "instock": true,
-    "sizes": {
-      "30": {
-        "sources": [
-          {
-            "id": "str_154",
-            "subid": "11932",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_806",
-            "subid": "11932",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1456",
-            "subid": "11932",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "32": {
-        "sources": [
-          {
-            "id": "str_155",
-            "subid": "11933",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_807",
-            "subid": "11933",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1457",
-            "subid": "11933",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "34": {
-        "sources": [
-          {
-            "id": "str_808",
-            "subid": "11934",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1458",
-            "subid": "11934",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "36": {
-        "sources": [
-          {
-            "id": "str_156",
-            "subid": "11935",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1459",
-            "subid": "11935",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "38": {
-        "sources": [
-          {
-            "id": "str_157",
-            "subid": "11936",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_809",
-            "subid": "11936",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1460",
-            "subid": "11936",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "40": {
-        "sources": [
-          {
-            "id": "str_158",
-            "subid": "11937",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_810",
-            "subid": "11937",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1461",
-            "subid": "11937",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "42": {
-        "sources": [
-          {
-            "id": "str_811",
-            "subid": "11938",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1462",
-            "subid": "11938",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      }
-    }
+    "instock": true
+
   },
   {
     "id": "11939",
@@ -342,357 +25,8 @@
     "color": "Black",
     "price": 3499,
     "sex": "Men",
-    "instock": true,
-    "sizes": {
-      "30": {
-        "sources": [
-          {
-            "id": "str_357",
-            "subid": "11940",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "0"
-          },
-          {
-            "id": "str_1019",
-            "subid": "11940",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1676",
-            "subid": "11940",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "1"
-          }
-        ]
-      },
-      "32": {
-        "sources": [
-          {
-            "id": "str_358",
-            "subid": "11941",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1013",
-            "subid": "11941",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1675",
-            "subid": "11941",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "34": {
-        "sources": [
-          {
-            "id": "str_359",
-            "subid": "11942",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1014",
-            "subid": "11942",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1674",
-            "subid": "11942",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "36": {
-        "sources": [
-          {
-            "id": "str_360",
-            "subid": "11943",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1015",
-            "subid": "11943",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1673",
-            "subid": "11943",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "38": {
-        "sources": [
-          {
-            "id": "str_361",
-            "subid": "11944",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1016",
-            "subid": "11944",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1672",
-            "subid": "11944",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "40": {
-        "sources": [
-          {
-            "id": "str_362",
-            "subid": "11945",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1017",
-            "subid": "11945",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1671",
-            "subid": "11945",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "42": {
-        "sources": [
-          {
-            "id": "str_1018",
-            "subid": "11946",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1670",
-            "subid": "11946",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      }
-    }
+    "instock": true
+    
   },
   {
     "id": "11947",
@@ -705,8 +39,7 @@
     "color": "Denim Blue",
     "price": 4699,
     "sex": "Men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "11955",
@@ -719,8 +52,7 @@
     "color": "Regular Blue",
     "price": 3499,
     "sex": "Men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "11957",
@@ -733,8 +65,7 @@
     "color": "Denim Blue",
     "price": 4699,
     "sex": "Men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   }
   
  ],
@@ -750,305 +81,8 @@
     "color": "Dark Blue",
     "price": 3499,
     "sex": "Men",
-    "instock": true,
-    "sizes": {
-      "30": {
-        "sources": [
-          {
-            "id": "str_348",
-            "subid": "11964",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1664",
-            "subid": "11964",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "32": {
-        "sources": [
-          {
-            "id": "str_349",
-            "subid": "11965",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1004",
-            "subid": "11965",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1663",
-            "subid": "11965",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "34": {
-        "sources": [
-          {
-            "id": "str_350",
-            "subid": "11966",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1005",
-            "subid": "11966",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1662",
-            "subid": "11966",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "36": {
-        "sources": [
-          {
-            "id": "str_351",
-            "subid": "11967",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1006",
-            "subid": "11967",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          },
-          {
-            "id": "str_1661",
-            "subid": "11967",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "4"
-          }
-        ]
-      },
-      "38": {
-        "sources": [
-          {
-            "id": "str_352",
-            "subid": "11968",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1007",
-            "subid": "11968",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1660",
-            "subid": "11968",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      },
-      "40": {
-        "sources": [
-          {
-            "id": "str_353",
-            "subid": "11969",
-            "pid": "",
-            "host": "Suvidha Karnal",
-            "host_image": null,
-            "address": null,
-            "city": "Karnal",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1008",
-            "subid": "11969",
-            "pid": "",
-            "host": "Suvidha Panipat",
-            "host_image": null,
-            "address": null,
-            "city": "Panipat",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          },
-          {
-            "id": "str_1659",
-            "subid": "11969",
-            "pid": "",
-            "host": "Suvidha Yamuna Nagar",
-            "host_image": null,
-            "address": null,
-            "city": "Yamuna Nagar",
-            "state": "Haryana",
-            "discounted_price": "3499",
-            "category": "Bottomwear",
-            "type": "JEANS",
-            "source_type": "offline",
-            "isavailable": true,
-            "stock": "2"
-          }
-        ]
-      }
-    }
+    "instock": true
+    
   },
   {
     "id": "9",
@@ -1061,8 +95,7 @@
     "color": "blue",
     "price": 1999,
     "sex": "men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "226062",
@@ -1075,8 +108,7 @@
     "color": "Brown Stone",
     "price": 3899,
     "sex": "Men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "226068",
@@ -1089,8 +121,7 @@
     "color": "Dark Navy",
     "price": 3899,
     "sex": "Men",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   }
  ],
  "HandmadeCard":[
@@ -1105,8 +136,7 @@
     "color": "Blue",
     "price": 2490,
     "sex": "Women",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   }
  ],
  "HandmadeProducts":[
@@ -1121,8 +151,7 @@
     "color": "Pink",
     "price": 2999,
     "sex": "Women",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },  
   {
     "id": "103381",
@@ -1135,8 +164,7 @@
     "color": "Purple",
     "price": 2490,
     "sex": "Women",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "103391",
@@ -1149,8 +177,7 @@
     "color": "Black",
     "price": 1990,
     "sex": "Women",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   },
   {
     "id": "103498",
@@ -1163,8 +190,7 @@
     "color": "Black",
     "price": 2490,
     "sex": "Women",
-    "instock": false,
-    "sizes": {}
+    "instock": false
   }
  ]
 }

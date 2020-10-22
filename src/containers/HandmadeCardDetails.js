@@ -21,7 +21,7 @@ class HandmadeCardDetails extends Component {
     render() {
         let cardDetails=this.props.Products.HandmadeCard;
         return (
-            <div className="col-md-4">
+            <div >
                 <div className="row justify-content-between ml-1 mb-1 mt-1">
                     <h3 className='col-10'>{cardDetails.title}</h3>
                     
