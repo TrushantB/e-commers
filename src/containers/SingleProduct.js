@@ -22,7 +22,26 @@ class SingleProduct extends Component{
         return(
             <div className='container-fluid app'>
                 <div className='row'>
-                    <div className="col-md-6"> 
+                    <div className="col-md-12 col-lg-12 col-sm-12 breadcrumbsec">
+                        <ul className="breadcrumbsmenu">
+                            <li className="breadcrumbsitems">
+                                <a href="#" className="breadcrumbslink">Home<i></i></a>
+                            </li>
+                            <li className="breadcrumbsitems">
+                                <a href="#" className="breadcrumbslink">Fruits & Vegetables</a>
+                            </li >
+                            <li className="breadcrumbsitems">
+                                <a href="#" className="breadcrumbslink">Fresh Vegetables</a>
+                            </li>
+                            <li className="breadcrumbsitems">
+                                <a href="#" className="breadcrumbslink">Organic</a>
+                            </li>
+                            <li className="breadcrumbsitems">
+                                <a href="#" className="breadcrumbslink">Fresh organic tomatoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-md-12 col-lg-6 col-sm-12"> 
                         <div className="back-btn">
                             <Link to='/'>
                             <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>

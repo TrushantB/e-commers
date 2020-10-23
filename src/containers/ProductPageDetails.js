@@ -21,25 +21,28 @@ class ProductPageDetails extends Component {
 
     render() {
         return (
-            <div className="col-md-6">
-                <div className="row justify-content-between ml-1 mb-5 mt-1">
-                    <h3 className=''>{this.props.product.title}</h3>
+            <div className="col-md-12 col-lg-6">
+                <div className="row justify-content-between ml-1 mb-5 mt-1 flex-column">
+                    <h3 className='product-title'>{this.props.product.title}</h3>
+                    <div className="mt-1">
+                        <h4 className="mt-4">Seller,ABC Farm</h4>
+                        <h3 className="mb-1 mt-3">1 kg, around 16 pieces</h3>
+                    </div>
                     
                 </div> 
                 {/* <div className="row mb-3 ml-1">
                     <div className='bg-primary rounded text-white ml-1'>₹{this.props.product.price}</div>
                 </div> */}
-                <h4>1 kg, around 16 pieces </h4>
-                <p className="mb-5">
+                
+                
+                <p className="productdesc">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.
                 </p>
-                <h3>₹{this.props.product.price}</h3>
-
-
-                <div className="d-flex mb-sm-5 mt-sm-5 ">
+                <h2 className="mt-5">₹{this.props.product.price}</h2>
+                <div className="d-flex mb-4 mt-5">
                 
 				  	<div className=""><input type="text" class="productcount"></input></div>
-				  	<div className="ml-sm-5"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
+				  	<div className="ml-5"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
                         <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" />
                         <span className="Addtocart">Add to Cart</span>
                     </button>
