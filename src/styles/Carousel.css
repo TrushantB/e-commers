@@ -1,0 +1,26 @@
+.sliderMax {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  
+
+  .white {
+    color: white;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  

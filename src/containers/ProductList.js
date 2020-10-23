@@ -3,8 +3,7 @@ import {connect} from 'react-redux';
 
 import ProductItem from '../components/ProductItem';
 import Slider from 'react-slick';
-import '../styles/product.css'
-import { Button } from 'bootstrap';
+import '../styles/ProductList.css'
 
 class ProductList extends Component{
     createProduct(list){

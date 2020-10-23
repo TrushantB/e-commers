@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import '../styles/product.css'
+import '../styles/ProductPageDetails.css'
 
 import { addToCart } from '../actions/index';
 
@@ -23,7 +23,7 @@ class ProductPageDetails extends Component {
         return (
             <div className="col-md-12 col-lg-6">
                 <div className="row justify-content-between ml-1 mb-5 mt-1 flex-column">
-                    <h3 className='product-title'>{this.props.product.title}</h3>
+                    <h3 className='product-detail-title'>{this.props.product.title}</h3>
                     <div className="mt-1">
                         <h4 className="mt-4">Seller,ABC Farm</h4>
                         <h3 className="mb-1 mt-3">1 kg, around 16 pieces</h3>
