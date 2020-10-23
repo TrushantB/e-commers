@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
-import Header from './Header';
-import ProductPageDetails from './ProductPageDetails';
+import ProductPageDetails from '../components/ProductPageDetails';
 
 
 class SingleProduct extends Component{
@@ -74,10 +72,9 @@ class SingleProduct extends Component{
 
 }
 
-function mapStateToProps(state){
-    return({
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product, cart }) => ({
+    Products:product.products,
+    cart:cart.cartProduct
+  })
 
 export default withRouter(connect(mapStateToProps)(SingleProduct));

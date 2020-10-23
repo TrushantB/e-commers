@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import registerServiceWorker from './registerServiceWorker';
-import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { Route, HashRouter } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
@@ -9,31 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
-
-
-import App from './components/App';
 import SingleProduct from './containers/SingleProduct';
 import Cart from './containers/Cart';
-
-import reducers from './reducers';
-import { loadState, saveState } from './localstorage';
-import Header from "./containers/Header";
-import Footer from "./containers/Footer";
-import CategoryDetails from "./containers/CategoryDetails";
-
-const persistentState = loadState();
-
-const store = createStore(
-    reducers,
-    persistentState,
-    applyMiddleware()
-);
-store.subscribe(()=>{
-    saveState({
-        cartProducts:store.getState().cartProducts
-    });
-});
-
+import Home from './containers/Home';
+import Product from "./containers/Product";
+import Header from "./components/Header";
+import Category from "./containers/Category";
+import Footer from "./components/Footer";
+import store from '../src/redux/store';
 
 
 ReactDOM.render(
@@ -42,21 +24,22 @@ ReactDOM.render(
         <HashRouter >
             <div>
           <Header />
-            <Route exact path='/' component={App} />
+            <Route exact path='/' component={Home} />
             <Route exact path='/product/:key/:id' component={SingleProduct} />
-            <Route exact path='/category/:id' component={CategoryDetails} />
+            <Route exact path='/product' component={Product} />
+            <Route exact path='/category' component={Category} />
             <Route exact path='/cart' component={Cart} />
           <Footer />
             </div>
         </HashRouter>
-        <ReduxToastr
+        {/* <ReduxToastr
             timeOut={4000}
             newestOnTop={false}
             preventDuplicates
             position="top-left"
             transitionIn="fadeIn"
             transitionOut="fadeOut"
-            progressBar/>
+            progressBar/> */}
     </div>
 </Provider>, document.getElementById('root'));
 registerServiceWorker();

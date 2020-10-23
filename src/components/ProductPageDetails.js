@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import '../styles/ProductPageDetails.css'
-
-import { addToCart } from '../actions/index';
+import '../styles/Home/ProductPageDetails.css'
 
 class ProductPageDetails extends Component {
 
@@ -59,10 +56,11 @@ function mapStatetoProps(state){
     });
 }
 
-function mapDispatchToProps(dispatch){
-    return bindActionCreators({ 
-        addToCart: addToCart,
-    },dispatch);
-}
+const mapDispatchToProps = (dispatch) => {
+    // const { loginUserData } = require('@redux/actions')
+    return {
+    //   loginUserData: (data) => dispatch(loginUserData(data))
+    }
+  }
 
 export default connect(mapStatetoProps, mapDispatchToProps)(ProductPageDetails);

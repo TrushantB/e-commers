@@ -1,7 +1,7 @@
 import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-class CategoryDetails extends Component {
+class Category extends Component {
     render() {
         return(
             <div>
@@ -11,10 +11,8 @@ class CategoryDetails extends Component {
     }
 }
 
-function mapStateToProps(state){
-    return({ 
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
 
-export default connect(mapStateToProps)(CategoryDetails);
+export default connect(mapStateToProps)(Category);

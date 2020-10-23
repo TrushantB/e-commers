@@ -1,6 +1,11 @@
-import {ADD_TO_CART, REMOVE_FROM_CART} from '../actions/actionTypes'
+import {ADD_TO_CART, REMOVE_FROM_CART} from '../types'
 
-export default function (state = [], action) {
+const INITIAL_STATE = {
+    cartProduct: []
+  }
+  
+
+  export default (state = INITIAL_STATE, action) => {
     switch(action.type){
         case ADD_TO_CART:
             return state.concat(action.payload);

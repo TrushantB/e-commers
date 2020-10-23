@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import ProductList from '../containers/ProductList';
-import Header from '../containers/Header';
-import Carousel from './Carousel';
-import HandmadeCards from '../containers/HandmadeCards';
-import CategoryList from '../containers/CategoryList';
+import ProductList from '../components/ProductList';
+import Carousel from '../components/Carousel';
+import HandmadeCards from '../components/HandmadeCards';
+import CategoryList from '../components/CategoryList';
 
-export default class App extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div className='container-fluid app'>

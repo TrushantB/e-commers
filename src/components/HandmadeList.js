@@ -1,7 +1,7 @@
 import React,{ Component} from 'react';
 import {connect} from 'react-redux';
 
-import ProductItem from '../components/ProductItem';
+import ProductItem from './ProductItem';
 
 
 class HandmadeList extends Component{
@@ -35,10 +35,8 @@ class HandmadeList extends Component{
     }
 }
 
-function mapStateToProps(state){
-    return({ 
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
 
 export default connect(mapStateToProps)(HandmadeList);

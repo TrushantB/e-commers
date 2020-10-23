@@ -36,10 +36,8 @@ class Header extends Component{
     }
 }
 
-function mapStateToProps(state){
-    return({
-        cart: state.cartProducts,
-    });
-}
+const mapStateToProps = ({ cart }) => ({
+    cart:cart.cartProduct
+  })
 
 export default connect (mapStateToProps)(Header);

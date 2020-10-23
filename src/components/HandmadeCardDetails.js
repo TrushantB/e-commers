@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
-import { addToCart } from '../actions/index';
 
 class HandmadeCardDetails extends Component {
 
@@ -49,17 +46,28 @@ class HandmadeCardDetails extends Component {
     }
 }
 
-function mapStatetoProps(state){
-    return({
-        cart: state.cartProducts,
-        Products: state.Products
-    });
-}
+// function mapStatetoProps(state){
+//     return({
+//         cart: state.cartProducts,
+//         Products: state.Products
+//     });
+// }
 
-function mapDispatchToProps(dispatch){
-    return bindActionCreators({ 
-        addToCart: addToCart,
-    },dispatch);
-}
+// function mapDispatchToProps(dispatch){
+//     return bindActionCreators({ 
+//         addToCart: addToCart,
+//     },dispatch);
+// }
+const mapStateToProps = ({ product, cart }) => ({
+    Products:product.products,
+    cart:cart.cartProduct
+  })
+  
+  const mapDispatchToProps = (dispatch) => {
+    // const { loginUserData } = require('@redux/actions')
+    return {
+    //   loginUserData: (data) => dispatch(loginUserData(data))
+    }
+  }
 
-export default connect(mapStatetoProps, mapDispatchToProps)(HandmadeCardDetails);
+export default connect(mapStateToProps, mapDispatchToProps)(HandmadeCardDetails);

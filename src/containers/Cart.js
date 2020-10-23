@@ -3,10 +3,7 @@ import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Header from './Header';
 import CartItem from '../components/CartItem';
-
-import { removeFromCart } from '../actions/index';
 
 class Cart extends Component{
 
@@ -108,10 +105,16 @@ const mapStateToProps = (state) => {
   }
 }
 
-function mapDispatchToProps(dispatch){
-    return bindActionCreators({ 
-        removeFromCart: removeFromCart
-    },dispatch);
-}
+// function mapDispatchToProps(dispatch){
+//     return bindActionCreators({ 
+//         removeFromCart: removeFromCart
+//     },dispatch);
+// }
+const mapDispatchToProps = (dispatch) => {
+    const { removeFromCart, addToCart } = require('../redux/actions')
+    return {
+    //   loginUserData: (data) => dispatch(loginUserData(data))
+    }
+  }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cart);

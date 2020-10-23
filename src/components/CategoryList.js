@@ -1,8 +1,8 @@
 import React,{ Component} from 'react';
 import {connect} from 'react-redux';
-import CategoryItem from '../components/CategoryItem';
+import CategoryItem from './CategoryItem';
 
-import ProductItem from '../components/ProductItem';
+import ProductItem from './ProductItem';
 
 
 class CategoryList extends Component{
@@ -36,10 +36,8 @@ class CategoryList extends Component{
     }
 }
 
-function mapStateToProps(state){
-    return({ 
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
 
 export default connect(mapStateToProps)(CategoryList);

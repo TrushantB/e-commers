@@ -1,9 +1,9 @@
 import React,{ Component} from 'react';
 import {connect} from 'react-redux';
 
-import ProductItem from '../components/ProductItem';
+import ProductItem from './ProductItem';
 import Slider from 'react-slick';
-import '../styles/ProductList.css'
+import '../styles/Home/ProductList.css'
 
 class ProductList extends Component{
     createProduct(list){
@@ -53,10 +53,8 @@ class ProductList extends Component{
     }
 }
 
-function mapStateToProps(state){
-    return({ 
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
 
 export default connect(mapStateToProps)(ProductList);

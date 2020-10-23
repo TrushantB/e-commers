@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 import HandmadeCardDetails from './HandmadeCardDetails';
 import HandmadeList from './HandmadeList';
 
-import Header from './Header';
-import ProductList from './ProductList';
-import ProductPageDetails from './ProductPageDetails';
 import Slider from 'react-slick';
 
 class HandmadeCards extends Component{
@@ -68,10 +65,8 @@ class HandmadeCards extends Component{
 
 }
 
-function mapStateToProps(state){
-    return({
-        Products: state.Products
-    });
-}
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
 
 export default withRouter(connect(mapStateToProps)(HandmadeCards));
