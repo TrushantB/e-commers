@@ -25,8 +25,8 @@ class ProductPageDetails extends Component {
                 <div className="row justify-content-between ml-1 mb-5 mt-1 flex-column">
                     <h3 className='product-detail-title'>{this.props.product.title}</h3>
                     <div className="mt-1">
-                        <h4 className="mt-4">Seller,ABC Farm</h4>
-                        <h3 className="mb-1 mt-3">1 kg, around 16 pieces</h3>
+                        <h4 className="productinfo-title mt-2">Seller,ABC Farm</h4>
+                        <h3 className="productinfo-subtitle mb-1 mt-3">1 kg, around 16 pieces</h3>
                     </div>
                     
                 </div> 
@@ -38,12 +38,12 @@ class ProductPageDetails extends Component {
                 <p className="productdesc">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.
                 </p>
-                <h2 className="mt-5">₹{this.props.product.price}</h2>
+                <h2 className="mt-5 mb-5">₹{this.props.product.price}</h2>
                 <div className="d-flex mb-4 mt-5">
                 
 				  	<div className=""><input type="text" class="productcount"></input></div>
-				  	<div className="ml-5"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
-                        <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" />
+				  	<div className="ml-3"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
+                        {/* <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" /> */}
                         <span className="Addtocart">Add to Cart</span>
                     </button>
                     </div>
