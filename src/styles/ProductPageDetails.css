@@ -1,6 +1,6 @@
 .productcount{
-    padding: 20px;
-    width: 60px;
+    padding:10px 28px;
+    width: 20px;
     border-radius: 4px;
     border: 1px #9c9ea1 solid;
    
@@ -22,14 +22,16 @@
 }
 
 .Addtocart{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .addtocartbtn{
     border-radius: 50px;
-    padding: 12px;
-    width: 130%;
-    /* background: linear-gradient(to right,#850cf0,#507de6); */
+    padding: 7px 10px;
+    width: 100%;
+    color: #ffffff;
+    text-transform: inherit;
+    background: linear-gradient(to right,#850cf0,#507de6);
 }
 
 .product-page-img{
