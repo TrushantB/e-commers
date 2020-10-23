@@ -134,7 +134,7 @@
    border-radius: 12px;
 }
 .main-slider .slick-slide{
-    background: linear-gradient(225deg, #4488FF 0%, #490096 100%);
+    /* background: linear-gradient(225deg, #4488FF 0%, #490096 100%); */
 }
 .main-slider .slick-next{right: 25px;}
 .main-slider .slick-prev{
