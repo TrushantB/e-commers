@@ -18,7 +18,7 @@ export default class Carousel extends Component {
     let data =[
       {
         id:1,
-        category:"flower",
+        category:"wildflower",
         title:"Thank You",
         subtitle:"Greeting Cards",
         label:"Loren ipsum",
@@ -26,7 +26,7 @@ export default class Carousel extends Component {
       },
       {
         id:2,
-        category:"flower",
+        category:"wildflower",
         title:"Thank You",
         subtitle:"Greeting Cards",
         label:"Loren ipsum",
@@ -34,7 +34,7 @@ export default class Carousel extends Component {
       },
       {
         id:3,
-        category:"flower",
+        category:"wildflower",
         title:"Thank You",
         subtitle:"Greeting Cards",
         label:"Loren ipsum",
@@ -42,7 +42,7 @@ export default class Carousel extends Component {
       },
       {
         id:4,
-        category:"flower",
+        category:"wildflower",
         title:"Thank You",
         subtitle:"Greeting Cards",
         image:'https://www.nutritionforostomates.com.au/wp-content/uploads/2016/06/food-nutrients-for-ostomates-1300x500.jpg',
@@ -58,9 +58,13 @@ export default class Carousel extends Component {
 
             <div className="slick-slide" key={slide.id}>
               <img className="slick-slide-image" src={`${slide.image}`} />
-              <label className="slick-slide-label">{slide.category}</label>
-              {/* <label className="slick-slide-label">{slide.title}</label> */}
-              {/* <label className="slick-slide-label">{slide.subtitle}</label> */}
+              <label className="slick-slide-label mt-3 category-title">{slide.category}</label>
+              <label className="slick-slide-label mt-3 thanks-title">{slide.title}</label> 
+              <label className="slick-slide-label mt-3 descrip-title">{slide.subtitle}</label>
+              <div className="mt-1 button-wrap">
+                <button className =" btn-explore btn-primary mr-3">explore</button>
+                <button className =" btn-buynow btn-primary">buy now</button>
+              </div>
             </div>
 
           )}

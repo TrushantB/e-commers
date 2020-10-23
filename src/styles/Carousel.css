@@ -26,9 +26,63 @@ slider-wrapper {
   left: 0px;
   font-size: 1.5em;
   bottom: 0px;
-  width: 100%;
 }
 .slick-prev:before,
 .slick-next:before {
   color: #777777;
 }
+
+.category-title{
+  top: 11%;
+  left: 10%;
+  font-size:30px;
+  font-weight: bold;
+  position: absolute
+
+}
+.thanks-title{
+  top: 18%;
+  left: 10%;
+  letter-spacing: 8px;
+  font-size:72px;
+  font-weight: bold;
+  position: absolute;
+
+}
+.descrip-title{
+  top: 37%;
+  left: 10%;
+  font-size:40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.button-wrap {
+ position: absolute;
+ top: 65%;
+ left: 0; 
+ width: 42%;
+ text-align: center;
+}
+
+.btn-explore{
+  background: transparent;
+  padding: 11px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  border:2pt solid #fff;
+  text-transform: uppercase;
+}
+
+.btn-buynow{
+  background: #fff;
+  color: blue;
+  padding: 11px 28px;
+  border-radius: 50px;
+  border:none;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+
+
+
