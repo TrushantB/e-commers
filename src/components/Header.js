@@ -23,7 +23,7 @@ class Header extends Component{
                             </button>
                         </form>
                     </div>
-                    <Link to='/cart' className='btn float-right user'>
+                    <Link to='/login' className='btn float-right user'>
                         <i class="fa fa-user" aria-hidden="true"></i>
                         login
                     </Link>

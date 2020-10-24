@@ -18,13 +18,13 @@ class Footer extends Component {
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="nav-link">Product</a>
+                    <Link to='/product' className="nav-link">Product</Link>
                   </li>
                   <li>
-                    <a href="#!" className="nav-link">About US </a>
+                    <Link to="/about" className="nav-link">About US </Link>
                   </li>
                   <li>
-                    <a href="#!" className="nav-link">Contact Us</a>
+                    <Link to="/contact" className="nav-link">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -32,13 +32,13 @@ class Footer extends Component {
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <ul className="list-unstyled mb-0">
                   <li>
-                    <a href="#!" className="nav-link">Terms of use</a>
+                    <Link to="/terms" className="nav-link">Terms of use</Link>
                   </li>
                   <li>
-                    <a href="#!" className="nav-link">Privacy policy</a>
+                    <Link to="/privacy-policy" className="nav-link">Privacy policy</Link>
                   </li>
                   <li>
-                    <a href="#!" className="nav-link">Cookies Policy</a>
+                    <Link to="/policy" className="nav-link">Cookies Policy</Link>
                   </li>
                 </ul>
               </div>

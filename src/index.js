@@ -17,6 +17,11 @@ import Category from "./containers/Category";
 import Footer from "./components/Footer";
 import store from '../src/redux/store';
 import Login from "./containers/Login";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
+import Policy from "./containers/Policy";
+import PrivacyPolicy from "./containers/PrivacyPolicy";
+import Terms from "./containers/Terms";
 
 
 ReactDOM.render(
@@ -31,6 +36,11 @@ ReactDOM.render(
             <Route exact path='/category/:id' component={Category} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/login' component={Login} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/policy' component={Policy} />
+            <Route exact path='/privacy-policy' component={PrivacyPolicy} />
+            <Route exact path='/terms' component={Terms} />
           <Footer />
             </div>
         </HashRouter>
