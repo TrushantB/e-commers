@@ -8,13 +8,14 @@ export default class Home extends Component {
   render() {
     return (
       <div className=' app'>
-        <div className="container-fluid p-0">
+        
+        
+        <div className="container-fluid ">
 
         <Carousel />
         <div className='container'>
           <div className='feature-wrapper'>
             <div className="py-4">
-              <h3 className='title mb-3'>Featured Products</h3>
               <ProductList />
             </div>
           </div>

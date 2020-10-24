@@ -1,4 +1,7 @@
 .product-title {
+    color: #2E2E2E;
     font-size: 20px;
-    color: black;
+    line-height: 24px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
 }

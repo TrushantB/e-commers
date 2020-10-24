@@ -9,8 +9,11 @@ class Footer extends Component {
           <div className="container p-4">
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <a href="#." className="navbar-brand">Flipfairy</a>
+              <Link to='/' className="navbar-brand rounded-0 ">
+                        <img src= {require('../images/FlipFairy-footer-logo.png')}/> 
+                    </Link>
               </div>
+              
 
               <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                 <ul className="list-unstyled">

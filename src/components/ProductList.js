@@ -38,14 +38,18 @@ class ProductList extends Component{
             arrows:false
           };
         return(
-            <div className='col-md-12 col-lg-10 product-list'>
-                <div style={{ textAlign: "right"}}>
+            <div className="row">
+              <div className='col-12'>
+                <div className="d-flex justify-content-between">
+                <h3 className='catogory-title mb-3'>Featured Products</h3>
+                  <div className="featurep-navigation">
                     <button className="button-left  mb-2" onClick={this.previous}>
-                    <i class="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
+                      <i class="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
                     </button>
                     <button className="button-right" onClick={this.next}>
-                    <i class="fa fa-angle-right pl-2 pr-2" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right pl-2 pr-2" aria-hidden="true"></i>
                     </button>
+                    </div>
                 </div>
 
                <Slider className="row" ref={c => (this.slider = c)}  {...settings}>
@@ -54,6 +58,7 @@ class ProductList extends Component{
                    }
                     
                 </Slider>
+            </div>
             </div>
         );
     }

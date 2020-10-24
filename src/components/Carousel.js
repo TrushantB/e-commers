@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import '../styles/Home/Carousel.css'
 import { connect } from 'react-redux';
 import { getHomeBanner } from '../services/home';
+import { Link } from 'react-router-dom';
 
  class Carousel extends Component {
 
@@ -21,7 +22,7 @@ import { getHomeBanner } from '../services/home';
       // fade:true,
       arrows:false,
       autoplaySpeed:5000,
-      margin:0,
+      margin:0  ,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
@@ -60,7 +61,7 @@ import { getHomeBanner } from '../services/home';
       }
     ]
     return (
-      <div className="slider-wrapper">
+      <div className="slider-wrapper main-slider">
 
         <Slider {...settings}>
 
@@ -72,8 +73,16 @@ import { getHomeBanner } from '../services/home';
               <label className="slick-slide-label mt-3 thanks-title">{slide.title}</label> 
               <label className="slick-slide-label mt-3 descrip-title">{slide.subtitle}</label>
               <div className="mt-1 button-wrap">
-                <button className =" btn-explore btn-primary mr-3">explore</button>
-                <button className =" btn-buynow btn-primary">buy now</button>
+                <button className =" btn-explore btn-primary mr-3">
+                  <Link to={`/product/${slide.id}`} className="text-decoration-none">
+                    explore
+                  </Link>
+                  </button>
+                <button className =" btn-buynow btn-primary">
+                  <Link to={`/product/${slide.id}`} >
+                    buy now
+                  </Link>
+                  </button>
               </div>
             </div>
 
