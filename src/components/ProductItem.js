@@ -21,9 +21,9 @@ import  '../styles/Home/ProductItem.css'
                     <Link to={this.createLink(this.props.product.id,this.props.product.type)} className="no-underline text-decoration-none">
                         <div className="card-title product-title mt-1">{this.props.product.title}</div>
                     </Link>
-                    <div className="card-text"><small className="text-muted"><p>Seller:{this.props.product.seller}</p></small></div>
+                    <div className="card-text mt-3"><small className="text-muted "><p>Seller:{this.props.product.seller}</p></small></div>
                     <div>
-                        <p className='text-left product-price'>{this.props.product.price}$</p>
+                        <p className='text-left product-price mt-3'>{this.props.product.price}$</p>
                     </div>
                 </div>
             </div>
