@@ -7,14 +7,15 @@ class Header extends Component{
     render(){
         return(
             <nav className='container'>
-                <div className='row justify-content-between py-4'>
-                    <Link to='/' className="navbar-brand rounded-0">
-                        <i className="fa fa-home" aria-hidden="true"></i> FlipFairy
+                
+                <div className='row py-4 align-items-center'>
+                    <Link to='/' className="navbar-brand rounded-0 ">
+                        <img src= {require('../images/flipfairy-logo.png')}/> 
                     </Link>
-                    <div className="header-search px-5">
-                        <form className="form-inline w-100 position-relative">
+                    <div className="header-search">
+                        <form className="form-inline w-100 m-auto position-relative">
                             <input type="text" className="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
-                            <button type="submit" className="btn btn-text position-absolute btn-search">
+                            <button type="su bmit" className="btn btn-text position-absolute btn-search">
                             <i 
                                 className="fa fa-search fa-fw" 
                                 aria-hidden="true" 
@@ -30,7 +31,12 @@ class Header extends Component{
                         />
                         <span className="badge badge-light position-absolute">{this.props.cart.length}</span>
                     </Link>
+
+                    <Link to='/cart' className='btn float-right nav-cart position-relative'>
+                        <i class="fa fa-user" aria-hidden="true">login</i>
+                    </Link>
                 </div>
+            
             </nav>
         );
     }

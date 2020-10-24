@@ -21,6 +21,7 @@ import { getHomeBanner } from '../services/home';
       // fade:true,
       arrows:false,
       autoplaySpeed:5000,
+      margin:0,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
