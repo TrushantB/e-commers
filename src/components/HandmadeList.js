@@ -16,7 +16,7 @@ class HandmadeList extends Component{
     }
 
     createGrid(){
-        this.productItems = this.createProduct(this.props.Products.HandmadeProducts);
+        this.productItems = this.createProduct(this.props.Products);
         let row=[];
         for(let j=0; j<this.productItems.length; j++){
             row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
@@ -36,7 +36,7 @@ class HandmadeList extends Component{
 }
 
 const mapStateToProps = ({ product }) => ({
-    Products:product.products
+    Products:product.handMadeCards
   })
 
 export default connect(mapStateToProps)(HandmadeList);

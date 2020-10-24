@@ -1,11 +1,11 @@
 import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
 import  '../styles/Home/ProductItem.css'
+ class ProductItem extends Component{
 
-export default class ProductItem extends Component{
-
-    createLink(id){
-        return `/product/${this.props.page}/${id}`;
+    createLink(id,type){
+        return `/product/${type}/${id}`;
     }
 
     render(){
@@ -18,10 +18,10 @@ export default class ProductItem extends Component{
                 />
                 </Link>
                 <div className="card-body ">
-                    <Link to={this.createLink(this.props.product.id)} className="no-underline text-decoration-none">
+                    <Link to={this.createLink(this.props.product.id,this.props.product.type)} className="no-underline text-decoration-none">
                         <div className="card-title product-title mt-1">{this.props.product.title}</div>
                     </Link>
-                    <div className="card-text"><small className="text-muted"><p>Seller:{this.props.product.brand}</p></small></div>
+                    <div className="card-text"><small className="text-muted"><p>Seller:{this.props.product.seller}</p></small></div>
                     <div>
                         <p className='text-left product-price'>{this.props.product.price}$</p>
                     </div>
@@ -30,3 +30,9 @@ export default class ProductItem extends Component{
         );
     }
 }
+
+const mapStateToProps = ({ product }) => ({
+    Products:product.products
+  })
+
+export default connect(mapStateToProps)(ProductItem);

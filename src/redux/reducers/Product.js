@@ -1,16 +1,25 @@
 import {
-  EXAMPLE_TYPE
+  GET_PRODUCT
 } from '../types';
-import products from '../../product.json';
+// import products from '../../product.json';
 
 const INITIAL_STATE = {
-  products: products
+  products: [],
+  featureProducts:[],
+  handMadeCards:[]
 }
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case EXAMPLE_TYPE:
-      return { ...state, message: action.payload }
+    case GET_PRODUCT:
+    state.featureProducts = action.payload.filter(item => item.type=='feature_product'); 
+    state.handMadeCards = action.payload.filter(item => item.type=='handmade_card');
+
+      return { ...state, 
+        products: action.payload,
+        featureProducts:[...state.featureProducts],
+        handMadeCards:[...state.handMadeCards]
+      }
     default:
       return state;
   }

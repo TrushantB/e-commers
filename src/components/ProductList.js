@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import ProductItem from './ProductItem';
 import Slider from 'react-slick';
 import '../styles/Home/ProductList.css'
+import { getProduct } from '../services/product'
 
 class ProductList extends Component{
     createProduct(list){
@@ -11,7 +12,7 @@ class ProductList extends Component{
 
         let pList = [];
         productItem.map((product)=> {
-            pList.push(<ProductItem key={product.id} product={product} page="Product"/>);
+            pList.push(<ProductItem key={product.id} product={product}/>);
         });
         return pList;
     }
@@ -20,6 +21,11 @@ class ProductList extends Component{
       }
       previous = () => {
         this.slider.slickPrev();
+      }
+      componentDidMount() {
+        getProduct().then((response) => {
+          this.props.getProductData(response.data)
+        })
       }
 
     render(){
@@ -44,7 +50,7 @@ class ProductList extends Component{
 
                <Slider className="row" ref={c => (this.slider = c)}  {...settings}>
                    {
-                       this.createProduct(this.props.Products.Product)
+                       this.props.Products.length && this.createProduct(this.props.Products)
                    }
                     
                 </Slider>
@@ -54,7 +60,13 @@ class ProductList extends Component{
 }
 
 const mapStateToProps = ({ product }) => ({
-    Products:product.products
+    Products:product.featureProducts
   })
 
-export default connect(mapStateToProps)(ProductList);
+  const mapDispatchToProps = (dispatch) => {
+    const { getProductData } = require('../redux/actions')
+    return {
+        getProductData: (data) => dispatch(getProductData(data))
+    }
+  }
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);

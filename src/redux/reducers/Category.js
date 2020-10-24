@@ -1,15 +1,15 @@
 import {
-  EXAMPLE_TYPE
+  GET_CATEGORY
 } from '../types';
 
 const INITIAL_STATE = {
-  message: 'DreamApp'
+  categoryData:[]
 }
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case EXAMPLE_TYPE:
-      return { ...state, message: action.payload }
+    case GET_CATEGORY:
+      return { ...state, categoryData: action.payload }
     default:
       return state;
   }

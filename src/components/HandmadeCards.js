@@ -42,7 +42,7 @@ class HandmadeCards extends Component{
                     <div className="col-md-6">
                         <Slider {...settings}>
                             {
-                                this.props.Products.HandmadeProducts.map((product) => {
+                                this.props.handMadeCards.length &&  this.props.handMadeCards.map((product) => {
                                     return(
                                     <div><img className='img-fluid handmade-page-img' 
                                         src={product.image}
@@ -66,7 +66,7 @@ class HandmadeCards extends Component{
 }
 
 const mapStateToProps = ({ product }) => ({
-    Products:product.products
+    handMadeCards:product.handMadeCards
   })
 
 export default withRouter(connect(mapStateToProps)(HandmadeCards));

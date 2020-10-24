@@ -9,6 +9,7 @@ class SingleProduct extends Component{
 
     constructor(props){
         super(props);
+        console.log("this.props.Products", this.props.Products ,this.props.match.params);
         this.props.Products[this.props.match.params.key].forEach((product)=>{
             if(product.id === this.props.match.params.id ){
                 this.product = product 
