@@ -7,8 +7,10 @@ class Header extends Component{
     render(){
         return(
             <nav className='container'>
-                
                 <div className='row py-4 align-items-center'>
+                <div>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
                     <Link to='/' className="navbar-brand rounded-0 ">
                         <img src= {require('../images/flipfairy-logo.png')}/> 
                     </Link>

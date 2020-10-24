@@ -184,12 +184,14 @@
 .nav-cart{
     font-size: 24px;
     color: #5D5D5D;
+    padding-left: 30px;
 }
 .user{
     font-size: 18px;
     text-transform: capitalize;
     padding-right: 2px;
     font-family: 'Raleway', sans-serif;
+    padding-left: 30px;
 }
 .user i {
     padding-right: 4px;
@@ -227,11 +229,24 @@
     border-left: 1px solid #BBBBBB; 
     border-radius: 0;
 }
+.header-search .form-inline .btn i {
+    font-size: 23px;
+}
 .header-search .form-inline input{
     color: #333333;
     font-size: 18px;
     letter-spacing: 0;
     line-height: 21px;
+}
+.form-control:focus {
+    color: #333333;
+    background-color: #fff;
+    border-color: #DFDFDF;
+    outline: 0;
+    box-shadow: none;
+}
+.btn.focus, .btn:focus{
+    box-shadow:none;
 }
 .title{
     color: var(--primary-light);
