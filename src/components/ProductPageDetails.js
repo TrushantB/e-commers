@@ -7,13 +7,27 @@ class ProductPageDetails extends Component {
 
     constructor(props){
         super(props);
-        console.log(this.props.product);
-        this.addToCart = this.addToCart.bind(this);
+        this.state = {
+          count:1
+        }
+
+    }
+    handleProductCount(count) {
+        if(0 < count  && count < 99) {
+            this.setState({count:count})
+        }
     }
 
-    addToCart(event){
-        this.props.addToCart(this.props.product.id);
-        toastr.success('Item Added', 'to cart succesfully', {timeOut:2000});
+    addToCart = () => {
+          let product = {
+              id:this.props.product.id,
+              title:this.props.product.title,
+              quantity:this.state.count,
+              image:this.props.product.image,
+              price: this.state.count * this.props.product.price
+          }
+        this.props.addToCart(product);
+        // toastr.success('Item Added', 'to cart succesfully', {timeOut:2000});
     }
 
     render() {
@@ -22,8 +36,8 @@ class ProductPageDetails extends Component {
                 <div className="row justify-content-between ml-1 mb-5 mt-1 flex-column">
                     <h3 className='product-detail-title'>{this.props.product.title}</h3>
                     <div className="mt-1">
-                        <h4 className="productinfo-title mt-2">Seller,ABC Farm</h4>
-                        <h3 className="productinfo-subtitle mb-1 mt-3">1 kg, around 16 pieces</h3>
+                        <h4 className="productinfo-title mt-2">Seller,{this.props.product.seller}</h4>
+                        <h3 className="productinfo-subtitle mb-1 mt-3">{this.props.product.subtitle}</h3>
                     </div>
                     
                 </div> 
@@ -33,12 +47,14 @@ class ProductPageDetails extends Component {
                 
                 
                 <p className="productdesc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.
+                {this.props.product.discription}
                 </p>
                 <h2 className="mt-5 mb-5">₹{this.props.product.price}</h2>
                 <div className="d-flex mb-4 mt-5">
                 
-				  	<div className=""><input type="text" class="productcount"></input></div>
+				  	<div className="">
+                          <input type="number" class="productcount" value={this.state.count} onChange={(e) => this.handleProductCount(e.target.value)}></input>
+                          </div>
 				  	<div className="ml-3"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
                         {/* <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" /> */}
                         <span className="Addtocart">Add to Cart</span>
@@ -52,14 +68,14 @@ class ProductPageDetails extends Component {
 
 function mapStatetoProps(state){
     return({
-        cart: state.cartProducts
+        cartProducts: state.cartProducts
     });
 }
 
 const mapDispatchToProps = (dispatch) => {
-    // const { loginUserData } = require('@redux/actions')
+    const { addToCart } = require('../redux/actions')
     return {
-    //   loginUserData: (data) => dispatch(loginUserData(data))
+      addToCart: (data) => dispatch(addToCart(data))
     }
   }
 

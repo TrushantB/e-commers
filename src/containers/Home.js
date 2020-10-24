@@ -8,8 +8,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className=' app'>
-        
-        
         <div className="container-fluid p-0">
 
         <Carousel />

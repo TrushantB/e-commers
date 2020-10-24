@@ -43,7 +43,7 @@ class Header extends Component{
 }
 
 const mapStateToProps = ({ cart }) => ({
-    cart:cart.cartProduct
+    cart:cart.cartProducts
   })
 
 export default connect (mapStateToProps)(Header);

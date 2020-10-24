@@ -5,3 +5,7 @@ export const getProduct = () => {
     return get(`/Product`);
  }
 
+ export const getProductById = (id) => {
+    return get(`/Product/${id}`);
+ }
+

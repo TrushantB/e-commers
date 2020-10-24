@@ -3,40 +3,51 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ProductPageDetails from '../components/ProductPageDetails';
-
+import { getProductById } from '../services/product'
 
 class SingleProduct extends Component{
-
-    constructor(props){
-        super(props);
-        console.log("this.props.Products", this.props.Products ,this.props.match.params);
-        this.props.Products[this.props.match.params.key].forEach((product)=>{
-            if(product.id === this.props.match.params.id ){
-                this.product = product 
-            }
+  
+    state = {
+        product:null
+    }
+    componentDidMount() {
+        getProductById(this.props.match.params.id).then((response) => {
+            this.setState({product:response.data})
         })
     }
 
     render(){
         return(
             <div className='container-fluid app'>
+                {
+                    this.state.product && 
                 <div className='row'>
                     <div className="col-md-12 col-lg-12 col-sm-12 breadcrumbsec">
                         <ul className="breadcrumbsmenu">
                             <li className="breadcrumbsitems">
-                                <a href="#" className="breadcrumbslink">Home<i></i></a>
+                                <Link to= "" className="breadcrumbslink">
+                                 Home
+                                </Link>
                             </li>
                             <li className="breadcrumbsitems">
-                                <a href="#" className="breadcrumbslink">Fruits & Vegetables</a>
+                               <Link to= "/product" className="breadcrumbslink">
+                                 Fruits & Vegetables
+                                </Link>                            
                             </li >
                             <li className="breadcrumbsitems">
-                                <a href="#" className="breadcrumbslink">Fresh Vegetables</a>
+                                <Link to= "/product" className="breadcrumbslink">
+                                   Fresh Vegetables
+                                </Link>
                             </li>
                             <li className="breadcrumbsitems">
-                                <a href="#" className="breadcrumbslink">Organic</a>
+                                <Link to= "/product" className="breadcrumbslink">
+                                    Organic
+                                </Link>
                             </li>
                             <li className="breadcrumbsitems">
-                                <a href="#" className="breadcrumbslink">Fresh organic tomatoes</a>
+                                <Link to= "/product" className="breadcrumbslink">
+                                Fresh organic tomatoes
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -48,24 +59,25 @@ class SingleProduct extends Component{
                         </div>
                         
                         <img className='img-fluid product-page-img' 
-                            src={this.product.image}
-                            alt={this.product.title}/>
+                            src={this.state.product.image}
+                            alt={this.state.product.title}/>
 
                             <div className="row productdetailsimg-row">
                                 <div className="col-4">
-                                    <img className="product-page-imgtab" src={this.product.image} alt="productimg1"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg1"  />
                                 </div>
                                 <div className="col-4">
-                                    <img className="product-page-imgtab" src={this.product.image} alt="productimg2"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg2"  />
                                 </div>
                                 <div className="col-4 mb-4">
-                                    <img className="product-page-imgtab" src={this.product.image} alt="productimg3"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg3"  />
                                 </div>
                             </div>
                     </div>
                     
-                    <ProductPageDetails product={this.product}/>
+                    <ProductPageDetails product={this.state.product}/>
                 </div>
+                }
                 
             </div>
         );

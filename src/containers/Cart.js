@@ -2,39 +2,10 @@ import React, { Component } from 'react';
 import { toastr } from 'react-redux-toastr';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
-import CartItem from '../components/CartItem';
+import { Link } from 'react-router-dom';
 
 class Cart extends Component{
 
-    getItemById(id) {
-    let obj = {};
-    this.props.products.Product.map((item) => {
-      if (item.id === id) {
-        obj = item;
-      }
-    })
-    return obj;
-    }
-
-    getQuantity(id) {
-    let quant = 0;
-    for(let item in this.props.cart){
-      if (this.props.cart[item] === id) {
-        quant++
-      };
-    }
-    return quant;
-    }
-    
-    totalPricesArray() {
-    let getPricesById = (id) => { return this.getItemById(id).price };
-    let prices = [];
-    this.props.cart.map(function (key) {
-      prices.push(getPricesById(key));
-    })
-    return prices;
-    }
     
     removeFromCart(id){
         this.props.removeFromCart(id);
@@ -42,11 +13,9 @@ class Cart extends Component{
     }
 
     render(){
-
-        let total = this.totalPricesArray().reduce(function (prev, next) {
-      return prev + next;
-        }, 0)
-        let rendered = [];
+      var total = this.props.cart.reduce(function(prev, cur) {
+        return prev + cur.price;
+      }, 0);
 
         return(
             <div className='container-fluid app'>
@@ -77,13 +46,21 @@ class Cart extends Component{
                                 </tfoot>
                                 <tbody>
                                     {
-                                        this.props.cart.map((key) => {
-                                            if(rendered.indexOf(key) === -1){
-                                                let product = this.getItemById(key);
-                                                let quantity = this.getQuantity(key);
-                                                rendered.push(key);
-                                                return (<CartItem key={key} removeFromCart={this.removeFromCart.bind(this)} quantity={quantity} product={product} />)
-                                            }
+                                        this.props.cart.map((item) => {
+                                            return(
+                                              <tr>
+                                              <td>{item.id}</td>
+                                              <td><img className='img-thumbnail' src={item.image} alt={item.title}/></td>
+                                              <td><Link to={`product/${item.id}`}>{item.title}</Link></td>
+                                              <td>{item.quantity}</td>
+                                              <td>₹{item.price}</td>
+                                              <td>
+                                                  <button onClick={()=>{ this.props.removeFromCart(item.id) }} className="btn btn-outline-danger" >
+                                                      <span className="icon is-small"> <i className="fa fa-trash" aria-hidden="true"></i> </span>
+                                                  </button>
+                                              </td>
+                                          </tr>
+                                            )
                                         })
                                     }
                                 </tbody>
@@ -98,22 +75,17 @@ class Cart extends Component{
 
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({cart,product}) => {
   return {
-    cart: state.cartProducts,
-    products: state.Products
+    cart: cart.cartProducts,
+    products: product.products
   }
 }
 
-// function mapDispatchToProps(dispatch){
-//     return bindActionCreators({ 
-//         removeFromCart: removeFromCart
-//     },dispatch);
-// }
 const mapDispatchToProps = (dispatch) => {
     const { removeFromCart, addToCart } = require('../redux/actions')
     return {
-    //   loginUserData: (data) => dispatch(loginUserData(data))
+      removeFromCart: (data) => dispatch(removeFromCart(data))
     }
   }
 

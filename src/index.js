@@ -16,6 +16,7 @@ import Header from "./components/Header";
 import Category from "./containers/Category";
 import Footer from "./components/Footer";
 import store from '../src/redux/store';
+import Login from "./containers/Login";
 
 
 ReactDOM.render(
@@ -25,10 +26,11 @@ ReactDOM.render(
             <div>
           <Header />
             <Route exact path='/' component={Home} />
-            <Route exact path='/product/:key/:id' component={SingleProduct} />
+            <Route exact path='/product/:id' component={SingleProduct} />
             <Route exact path='/product' component={Product} />
-            <Route exact path='/category' component={Category} />
+            <Route exact path='/category/:id' component={Category} />
             <Route exact path='/cart' component={Cart} />
+            <Route exact path='/login' component={Login} />
           <Footer />
             </div>
         </HashRouter>

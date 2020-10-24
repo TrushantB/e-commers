@@ -5,4 +5,8 @@ export const getCategories = () => {
     return get(`/Category`);
 }
 
+export const getCategoryById = (id) => {
+    return get(`/Category/${id}`);
+}
+
 

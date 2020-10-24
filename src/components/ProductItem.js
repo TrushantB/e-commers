@@ -5,11 +5,11 @@ import  '../styles/Home/ProductItem.css'
  class ProductItem extends Component{
 
     createLink(id,type){
-        return `/product/${type}/${id}`;
+        return `/product/${id}`;
     }
 
     render(){
-
+   
         return(
             <div className="p-0" >
                 <Link to={this.createLink(this.props.product.id)}>
