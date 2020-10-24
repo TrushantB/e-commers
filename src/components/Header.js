@@ -23,7 +23,10 @@ class Header extends Component{
                             </button>
                         </form>
                     </div>
-                    
+                    <Link to='/cart' className='btn float-right user'>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        login
+                    </Link>
                     <Link to='/cart' className='btn float-right nav-cart position-relative'>
                         <i 
                             className="fa fa-shopping-cart fa-fw" 
@@ -32,9 +35,7 @@ class Header extends Component{
                         <span className="badge badge-light position-absolute">{this.props.cart.length}</span>
                     </Link>
 
-                    <Link to='/cart' className='btn float-right nav-cart position-relative'>
-                        <i class="fa fa-user" aria-hidden="true">login</i>
-                    </Link>
+                    
                 </div>
             
             </nav>
