@@ -14,7 +14,7 @@
     --danger: #FA0300;
 }
 .container{
-    max-width:1140px !important ;
+    max-width:118   0px !important ;
 }
 
 .header-logo {
@@ -221,6 +221,17 @@
 }
 .header-search .btn-search{
     right: 5px;
+}
+.header-search .form-inline  .btn{
+    padding: 13px 18px;
+    border-left: 1px solid #BBBBBB; 
+    border-radius: 0;
+}
+.header-search .form-inline input{
+    color: #333333;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 21px;
 }
 .title{
     color: var(--primary-light);
