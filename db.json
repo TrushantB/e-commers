@@ -1,0 +1,97 @@
+{
+  "HomeBanner": [
+    {
+      "id":1,
+      "category":"wildflower",
+      "title":"Thank You",
+      "subtitle":"Greeting Cards 1",
+      "label":"Loren ipsum",
+      "image":"https://www.sagefruit.com/wp-content/uploads/2017/02/apricots-1509634_1920-2-1300x500.jpg"
+    },
+    {
+      "id":2,
+      "category":"wildflower",
+      "title":"Thank You",
+      "subtitle":"Greeting Cards 2",
+      "label":"Loren ipsum",
+      "image":"https://delmonte-sitefinity-public.s3.amazonaws.com/images/default-source/hompage-carousel-backgrounds/delmonte-homepagecarousel--pride_rainbow_horizontal_hi_branded_heart_june2019_global-1300x500.jpg?sfvrsn=3eec0d17_2"
+    },
+    {
+      "id":3,
+      "category":"wildflower",
+      "title":"Thank You",
+      "subtitle":"Greeting Cards 3",
+      "label":"Loren ipsum",
+      "image":"https://iamherbalifenutrition.com/wp-content/uploads/2019/07/Exotic-Fruits-1300x500.png"
+    },
+    {
+      "id":4,
+      "category":"wildflower",
+      "title":"Thank You",
+      "subtitle":"Greeting Cards 4",
+      "label":"Loren ipsum",
+      "image":"https://www.nutritionforostomates.com.au/wp-content/uploads/2016/06/food-nutrients-for-ostomates-1300x500.jpg"
+    }
+  ],
+  "Product": [
+    {
+      "id": "11",
+      "title": "Fresh Organic Tomatoes",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
+      "category": "Fruits",
+      "seller": "ABC Farm",
+      "price": 34,
+      "subtitle": "1kg aroung 16 pieces",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+  
+    },
+    {
+      "id": "12",
+      "title": "Croissants Puff Pastry",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(1).png?alt=media&token=fa405d6d-26eb-440a-94a2-1e4a56c3d655",
+      "category": "Bakery",
+      "seller": "PQR Farm",
+      "price": 34,
+      "subtitle": "1kg aroung 16 pieces",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+  
+    },
+    {
+      "id": "13",
+      "title": "Class A Apple Basket",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(2).png?alt=media&token=bdcfcb68-37ca-4ec2-a9ac-9d1a0ebf52d9",
+      "category": "Fruits",
+      "seller": "IJK Farm",
+      "price": 34,
+      "subtitle": "1kg aroung 16 pieces",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+  
+    },
+    {
+      "id": "14",
+      "title": "Premium  Grapes",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(3).png?alt=media&token=6d8fe778-a184-4411-aca7-cacaf62aa7e8",
+      "category": "Fruits",
+      "seller": "RMD Farm",
+      "price": 34,
+      "subtitle": "1kg aroung 16 pieces",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+  
+    },
+    {
+      "id": "15",
+      "title": "Class A Tomatoes Basket",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
+      "category": "Fruits",
+      "seller": "XYZ Farm",
+      "price": 34,
+      "subtitle": "1kg aroung 16 pieces",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+  
+    }
+    
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

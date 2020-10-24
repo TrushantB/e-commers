@@ -1,15 +1,24 @@
 import React, { Component } from "react";
 import Slider from 'react-slick';
 import '../styles/Home/Carousel.css'
+import { connect } from 'react-redux';
+import { getHomeBanner } from '../services/home';
 
-export default class Carousel extends Component {
+ class Carousel extends Component {
+
+  componentDidMount() {
+    getHomeBanner().then((response) => {
+      this.props.getHomeBannerData(response.data)
+    })
+  }
+
   render() {
     var settings = {
       dots: true,
       infinite: true,
       autoplay:true,
       speed: 2000,
-      fade:true,
+      // fade:true,
       arrows:false,
       autoplaySpeed:5000,
       slidesToShow: 1,
@@ -54,7 +63,7 @@ export default class Carousel extends Component {
 
         <Slider {...settings}>
 
-          {data.map((slide) =>
+          {this.props.bannerData.map((slide) =>
 
             <div className="slick-slide" key={slide.id}>
               <img className="slick-slide-image" src={`${slide.image}`} />
@@ -75,3 +84,18 @@ export default class Carousel extends Component {
     );
   }
 };
+
+const mapStatetoProps = ({home}) => {
+  return({
+    bannerData: home.bannerData
+  });
+}
+
+const mapDispatchToProps = (dispatch) => {
+  const { getHomeBannerData } = require('../redux/actions')
+  return {
+    getHomeBannerData: (data) => dispatch(getHomeBannerData(data))
+  }
+}
+
+export default connect(mapStatetoProps, mapDispatchToProps)(Carousel);
