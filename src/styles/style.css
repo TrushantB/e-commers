@@ -10,7 +10,9 @@
     --black: #444444;
     --danger: #FA0300;
 }
-
+.container{
+    max-width:1140px !important ;
+}
 
 .header-logo {
     font-size: 25px;
@@ -135,6 +137,10 @@
 }
 .main-slider .slick-slide{
     /* background: linear-gradient(225deg, #4488FF 0%, #490096 100%); */
+    margin: 0;
+}
+.slick-slide img{
+    width: 100%;
 }
 .main-slider .slick-next{right: 25px;}
 .main-slider .slick-prev{
@@ -168,6 +174,8 @@
 }
 .header-search .form-control{
     flex: 1 1 auto;
+    background-color: #f7f7f8;
+    padding: 25px;
 }
 .header-search .btn-search{
     right: 5px;

@@ -7,7 +7,11 @@ import CategoryList from '../components/CategoryList';
 export default class Home extends Component {
   render() {
     return (
-      <div className='container-fluid app'>
+      <div className=' app'>
+        
+        
+        <div className="container-fluid p-0">
+
         <Carousel />
         <div className='container'>
           <div className='feature-wrapper'>
@@ -24,6 +28,7 @@ export default class Home extends Component {
             <h3 className='title mb-3'>Handmade Cards</h3>
             <HandmadeCards />
           </div>
+        </div>  
         </div>
       </div>
     );
