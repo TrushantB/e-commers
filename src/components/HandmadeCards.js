@@ -38,7 +38,7 @@ class HandmadeCards extends Component{
             //         <Header />
             //     </div>
             <div>
-                <div className='row'>
+                <div className='row   align-items-center'>
                     <div className="col-md-6">
                         <Slider {...settings}>
                             {

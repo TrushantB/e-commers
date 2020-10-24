@@ -20,10 +20,10 @@ export default class Home extends Component {
             </div>
           </div>
           <div className='category-wrapper py-3'>
-            <h3 className='title mb-3'>Category</h3>
+            <h3 className='cat-title'>Category</h3>
             <CategoryList />
           </div>
-          <div className='handmade-wrapper py-3'>
+          <div className='handmade-wrapper py-4'>
             <h3 className='title mb-3'>Handmade Cards</h3>
             <HandmadeCards />
           </div>

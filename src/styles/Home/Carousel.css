@@ -54,7 +54,7 @@ slider-wrapper {
 
 }
 .descrip-title{
-  top: 39%;
+  top: 35%;
   left: 11%;
   font-size:44px;
   font-weight: bold;
@@ -64,22 +64,29 @@ slider-wrapper {
 
 .button-wrap {
  position: absolute;
- top: 65%;
- left: 0; 
+ top: 53%;
+ left: 2%; 
  width: 42%;
  text-align: center;
 }
 
 .btn-explore{
+  font-family: 'Raleway', sans-serif;
   background: transparent;
-  padding: 11px 28px;
+  padding: 11px 16px;
   border-radius: 50px;
   font-weight: bold;
   border:2pt solid #fff;
   text-transform: uppercase;
 }
 
+.btn-primary:hover{
+  background-color: none;
+}
+
 .btn-buynow{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   background: #fff;
   color: blue;
   padding: 11px 28px;
@@ -87,6 +94,9 @@ slider-wrapper {
   border:none;
   font-weight: bold;
   text-transform: uppercase; 
+}
+.btn-buynow a:hover{
+  text-decoration: none;
 }
 .button-left{
   background-color: #ffffff;
