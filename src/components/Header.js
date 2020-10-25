@@ -32,9 +32,14 @@ class Header extends Component{
                          <Link to="/about" onClick = {() => this.handleSidenav()}>
                             <img src= {require('../images/flipfairy-logo.png') }/>
                          </Link>
-                        <Link to="/about" onClick = {() => this.handleSidenav()}>About</Link>
-                        <Link to="/product" onClick = {() => this.handleSidenav()}>Product</Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>Category</Link>
+                          <Link to="/about" onClick = {() => this.handleSidenav()}>
+                                shop by category <i class="fa fa-angle-right arw-position" aria-hidden="true"></i>
+                          </Link>
+                        <Link to="/about" onClick = {() => this.handleSidenav()}>fruits <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/product" onClick = {() => this.handleSidenav()}>vegetables <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
                         
                     </div>
 
