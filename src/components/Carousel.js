@@ -92,6 +92,7 @@ import { Link } from 'react-router-dom';
         </Slider>
 
       </div>
+      
     );
   }
 };

@@ -11,7 +11,7 @@ class Header extends Component{
 
     handleSidenav() {
         if(!this.state.flag) {
-            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.width = "450px";
         } else {
             document.getElementById("mySidenav").style.width = "0px";
 
@@ -22,13 +22,16 @@ class Header extends Component{
     render(){
         return(
             <nav className='container'>
-                <div className='row py-4 align-items-center'>
-                <div>
-                    <i class="fa fa-bars" aria-hidden="true" onClick={() => this.handleSidenav()}></i>
+                <div className='row align-items-center header-nav'>
+                <div onClick={() => this.handleSidenav()}>
+                     <img src= {require('../images/nav-icon.png') }/> 
                 </div>
 
                     <div id="mySidenav" className="sidenav">
                         <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}>&times;</a>
+                         <Link to="/about" onClick = {() => this.handleSidenav()}>
+                            <img src= {require('../images/flipfairy-logo.png') }/>
+                         </Link>
                         <Link to="/about" onClick = {() => this.handleSidenav()}>About</Link>
                         <Link to="/product" onClick = {() => this.handleSidenav()}>Product</Link>
                         <Link to="/Category" onClick = {() => this.handleSidenav()}>Category</Link>
@@ -39,19 +42,16 @@ class Header extends Component{
                         <img src= {require('../images/flipfairy-logo.png')}/> 
                     </Link>
                     <div className="header-search">
-                        <form className="form-inline w-100 m-auto position-relative">
+                        <form className="form-inline m-auto position-relative">
                             <input type="text" className="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
                             <button type="su bmit" className="btn btn-text position-absolute btn-search">
-                            <i 
-                                className="fa fa-search fa-fw" 
-                                aria-hidden="true" 
-                            />
+                                <img src={require('../images/search-icon.png')}/>
                             </button>
                         </form>
                     </div>
                     <Link to='/login' className='btn float-right user'>
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        login
+                       <img src={require('../images/user.png')}/>
+                        <span>login</span>
                     </Link>
                     <Link to='/cart' className='btn float-right nav-cart position-relative'>
                         <i 

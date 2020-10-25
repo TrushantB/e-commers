@@ -8,14 +8,14 @@ class Footer extends Component {
         <footer className="text-center text-lg-left site-footer text-white py-4">
           <div className="container p-4">
             <div className="row align-items-center">
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <div className="col-lg-3 col-md-6  footer-logo">
               <Link to='/' className="navbar-brand rounded-0 ">
                         <img src= {require('../images/FlipFairy-footer-logo.png')}/> 
                     </Link>
               </div>
               
 
-              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <div className="footer-menu">
                 <ul className="list-unstyled">
                   <li>
                     <Link to='/product' className="nav-link">Product</Link>
@@ -29,7 +29,7 @@ class Footer extends Component {
                 </ul>
               </div>
               
-              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <div className="col-lg-2 col-md-6  footer-menu">
                 <ul className="list-unstyled mb-0">
                   <li>
                     <Link to="/terms" className="nav-link">Terms of use</Link>
@@ -43,7 +43,7 @@ class Footer extends Component {
                 </ul>
               </div>
             
-              <div className='col-lg-5 col-md-6'>
+              <div className='col-lg-5 col-md-6 social-wrap'>
                 <ul className='list-unstyled d-flex justify-content-center social-menu'>
                   <li className='px-2'>
                     <a href="#."><i className='fa fa-facebook'></i></a>
@@ -56,7 +56,6 @@ class Footer extends Component {
                   </li>
                 </ul>
                 <div className="text-center p-3 copyright-text">
-                © 2020 Copyright:
                 <a className="text-white" href="https://flipfairy.com/">2020 © Flipfairy  All Rights Reserved</a>
               </div>
             </div>

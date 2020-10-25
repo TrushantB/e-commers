@@ -10,8 +10,8 @@ export default class Home extends Component {
       <div className=' app'>
         
         
-        <div className="container-fluid ">
-
+        <div className="container-fluid">
+        
         <Carousel />
         <div className='container'>
           <div className='feature-wrapper'>
