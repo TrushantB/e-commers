@@ -44,14 +44,14 @@ ReactDOM.render(
           <Footer />
             </div>
         </HashRouter>
-        <ReduxToastr
+        {/* <ReduxToastr
             timeOut={4000}
             newestOnTop={false}
             preventDuplicates
             position="top-left"
             transitionIn="fadeIn"
             transitionOut="fadeOut"
-            progressBar/>
+            progressBar/> */}
     </div>
 </Provider>, document.getElementById('root'));
 registerServiceWorker();

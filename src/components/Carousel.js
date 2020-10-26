@@ -69,20 +69,22 @@ import { Link } from 'react-router-dom';
 
             <div className="slick-slide" key={slide.id}>
               <img className="slick-slide-image" src={`${slide.image}`} />
-              <label className="slick-slide-label mt-3 category-title">{slide.category}</label>
-              <label className="slick-slide-label mt-1 thanks-title">{slide.title}</label> 
-              <label className="slick-slide-label mt-1 descrip-title">{slide.subtitle}</label>
-              <div className="mt-1 button-wrap">
-                <button className =" btn-explore ban-btn mr-3">
+              <div className ="banner-text">
+              <label className="slick-slide-label category-title">{slide.category}</label>
+              <label className="slick-slide-label thanks-title">{slide.title}</label> 
+              <label className="slick-slide-label  descrip-title">{slide.subtitle}</label>
+              <div className="mt-2 button-wrap">
+                <button className =" btn-explore ban-btn">
                   <Link to={`/product/${slide.id}`} className="text-decoration-none">
                     explore
                   </Link>
                   </button>
-                <button className =" btn-buynow">
+                <button className ="ml-3 btn-buynow">
                   <Link to={`/product/${slide.id}`} >
                     buy now
                   </Link>
                   </button>
+              </div>
               </div>
             </div>
             
