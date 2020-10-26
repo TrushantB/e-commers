@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import '../styles/Home/Header.css'
 import { slide as Menu } from 'react-burger-menu'
+import { getCategories } from '../services/category'
 
 class Header extends Component{
     state = {
@@ -18,6 +19,12 @@ class Header extends Component{
         }
         this.setState({flag:!this.state.flag})
     }
+    componentDidMount() {
+        getCategories().then((response) => {
+            console.log(response.data);
+          this.props.getCategoryData(response.data)
+        })
+      }
 
     render(){
         return(
@@ -29,17 +36,23 @@ class Header extends Component{
 
                     <div id="mySidenav" className="sidenav">
                         <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}>&times;</a>
-                         <Link to="/about" onClick = {() => this.handleSidenav()}>
+                         <Link to="/" onClick = {() => this.handleSidenav()}>
                             <img src= {require('../images/flipfairy-logo.png') }/>
                          </Link>
                           <Link to="/about" onClick = {() => this.handleSidenav()}>
-                                shop by category <i class="fa fa-angle-right arw-position" aria-hidden="true"></i>
+                                shop by category 
                           </Link>
-                        <Link to="/about" onClick = {() => this.handleSidenav()}>fruits <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/product" onClick = {() => this.handleSidenav()}>vegetables <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                          {
+                              this.props.categoryData.map((item) => {
+                                  return (
+                                      <Link key ={item.id} to={`/category/${item.id}`} onClick = {() => this.handleSidenav()}>{item.name} <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                                  )
+                              })
+                          }
+                        {/* <Link to="/about" onClick = {() => this.handleSidenav()}>fruits <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery <i className=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i className=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link> */}
                         
                     </div>
 
@@ -73,9 +86,15 @@ class Header extends Component{
         );
     }
 }
-
-const mapStateToProps = ({ cart }) => ({
-    cart:cart.cartProducts
+const mapStateToProps = ({ category, cart }) => ({
+    cart:cart.cartProducts,
+    categoryData:category.categoryData
   })
 
-export default connect (mapStateToProps)(Header);
+  const mapDispatchToProps = (dispatch) => {
+    const { getCategoryData } = require('../redux/actions')
+    return {
+        getCategoryData: (data) => dispatch(getCategoryData(data))
+    }
+  }
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,9 +1,16 @@
 import {ADD_TO_CART, REMOVE_FROM_CART} from '../types';
 
-export function addToCart(payload){
+export function addToCart(payload,quantity){
+    let product = {
+        id:payload.id,
+        title:payload.title,
+        quantity:quantity,
+        image:payload.image,
+        price: quantity * payload.price
+    }
     return({
         type: ADD_TO_CART,
-        payload: payload
+        payload: product
     });
 }
 

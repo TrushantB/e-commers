@@ -9,7 +9,9 @@ class CategoryList extends Component{
         let productItem = list;
 
         let pList = [];
-        productItem.map((product)=> {
+        productItem.map((product,index)=> {
+            if(index > 3)
+            return 0;
             pList.push(<CategoryItem key={product.id} product={product} page="category"/>);
         });
         return pList;

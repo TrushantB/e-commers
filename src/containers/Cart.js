@@ -8,8 +8,9 @@ class Cart extends Component{
 
     
     removeFromCart(id){
+        // toastr.success('Item Removed', 'from cart succesfully', {timeOut:2000});
+        toastr.success('The title', 'The message')
         this.props.removeFromCart(id);
-        toastr.success('Item Removed', 'from cart succesfully', {timeOut:2000});
     }
 
     render(){

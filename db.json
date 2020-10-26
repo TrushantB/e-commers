@@ -40,10 +40,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
       "category": "Fruits",
       "seller": "ABC Farm",
-      "price": 34,
+      "price": 32,
       "type":"feature_product",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -52,10 +52,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(1).png?alt=media&token=fa405d6d-26eb-440a-94a2-1e4a56c3d655",
       "category": "Bakery",
       "seller": "PQR Farm",
-      "price": 34,
+      "price": 35,
       "type":"feature_product",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -64,10 +64,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(2).png?alt=media&token=bdcfcb68-37ca-4ec2-a9ac-9d1a0ebf52d9",
       "category": "Fruits",
       "seller": "IJK Farm",
-      "price": 34,
+      "price": 30,
       "type":"feature_product",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -76,10 +76,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(3).png?alt=media&token=6d8fe778-a184-4411-aca7-cacaf62aa7e8",
       "category": "Fruits",
       "seller": "RMD Farm",
-      "price": 34,
+      "price": 36,
       "type":"feature_product",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -91,7 +91,7 @@
       "price": 34,
       "type":"feature_product",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -100,10 +100,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
       "category": "Handmade",
       "seller": "XYZ Farm",
-      "price": 34,
+      "price": 31,
       "type":"handmade_card",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },  
     {
@@ -112,10 +112,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(9).png?alt=media&token=9b292fe8-2134-491f-876f-142ce1bd492a",
       "category": "Handmade",
       "seller": "XYZ Farm",
-      "price": 34,
+      "price": 33,
       "type":"handmade_card",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -124,10 +124,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
       "category": "Handmade",
       "seller": "XYZ Farm",
-      "price": 34,
+      "price": 31,
       "type":"handmade_card",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
   
     },
     {
@@ -136,10 +136,10 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(11).png?alt=media&token=51371ee3-afa7-4a39-91f4-49b838e5c44b",
       "category": "Handmade",
       "seller": "XYZ Farm",
-      "price": 34,
+      "price": 32,
       "type":"handmade_card",
       "subtitle": "1kg aroung 16 pieces",
-      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
     }
     
   ],
@@ -151,7 +151,7 @@
     },
     {
       "id": "222",
-      "name": "Vegies",
+      "name": "Vegitables",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(5).png?alt=media&token=35613581-d77c-4da9-be73-5a4ffdba06ca"
     },
     {
@@ -163,6 +163,12 @@
     {
       "id": "444",
       "name": "Dairy",
+      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
+
+    },
+    {
+      "id": "-555",
+      "name": "Handmade Cards",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
 
     }

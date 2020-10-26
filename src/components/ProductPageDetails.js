@@ -18,17 +18,11 @@ class ProductPageDetails extends Component {
         }
     }
 
-    addToCart = () => {
-          let product = {
-              id:this.props.product.id,
-              title:this.props.product.title,
-              quantity:this.state.count,
-              image:this.props.product.image,
-              price: this.state.count * this.props.product.price
-          }
-        this.props.addToCart(product);
-        // toastr.success('Item Added', 'to cart succesfully', {timeOut:2000});
-    }
+    // addToCart = () => {
+
+    //     this.props.addToCart(product);
+    //     // toastr.success('Item Added', 'to cart succesfully', {timeOut:2000});
+    // }
 
     render() {
         return (
@@ -47,15 +41,15 @@ class ProductPageDetails extends Component {
                 
                 
                 <p className="productdesc">
-                {this.props.product.discription}
+                {this.props.product.description}
                 </p>
                 <h2 className="mt-5 mb-5">₹{this.props.product.price}</h2>
                 <div className="d-flex mb-4 mt-5">
                 
 				  	<div className="">
-                          <input type="number" class="productcount" value={this.state.count} onChange={(e) => this.handleProductCount(e.target.value)}></input>
+                          <input type="number" className="productcount" value={this.state.count} onChange={(e) => this.handleProductCount(e.target.value)}></input>
                           </div>
-				  	<div className="ml-3"><button  onClick={this.addToCart} className="btn m-1 btn-primary addtocartbtn">
+				  	<div className="ml-3"><button  onClick={this.props.addToCart(this.props.product,this.state.count)} className="btn m-1 btn-primary addtocartbtn">
                         {/* <i className="fa fa-shopping-cart fa-fw" aria-hidden="true" /> */}
                         <span className="Addtocart">Add to Cart</span>
                     </button>
@@ -75,7 +69,7 @@ function mapStatetoProps(state){
 const mapDispatchToProps = (dispatch) => {
     const { addToCart } = require('../redux/actions')
     return {
-      addToCart: (data) => dispatch(addToCart(data))
+      addToCart: (data,quantity) => dispatch(addToCart(data,quantity))
     }
   }
 

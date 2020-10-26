@@ -44,10 +44,10 @@ class ProductList extends Component{
                 <h3 className='catogory-title mb-3'>Featured Products</h3>
                   <div className="featurep-navigation">
                     <button className="button-left  mb-2" onClick={this.previous}>
-                      <i class="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
+                      <i className="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
                     </button>
                     <button className="button-right" onClick={this.next}>
-                      <i class="fa fa-angle-right pl-2 pr-2" aria-hidden="true"></i>
+                      <i className="fa fa-angle-right pl-2 pr-2" aria-hidden="true"></i>
                     </button>
                     </div>
                 </div>

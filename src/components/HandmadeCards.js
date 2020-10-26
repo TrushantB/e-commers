@@ -11,11 +11,17 @@ class HandmadeCards extends Component{
 
     constructor(props){
         super(props);
+        this.state = {
+            currentSlide:0
+        }
         // this.props.Products.forEach((product)=>{
         //     if(product.id === this.props.match.params.id ){
         //         this.product = product 
         //     }
         // })
+
+    }
+    componentDidMount() {
 
     }
 
@@ -30,8 +36,13 @@ class HandmadeCards extends Component{
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows:false
+            arrows:false,
+            beforeChange: (prev, next) => {
+                this.setState({ currentSlide: next });
+              },
           };
+
+          console.log("currentSlide",this.state.currentSlide);
         return(
             // <div className=''>
             //     <div className='row header p-3'>
@@ -44,7 +55,7 @@ class HandmadeCards extends Component{
                             {
                                 this.props.handMadeCards.length &&  this.props.handMadeCards.map((product) => {
                                     return(
-                                    <div><img className='img-fluid handmade-page-img' 
+                                    <div key={product.id}><img className='img-fluid handmade-page-img' 
                                         src={product.image}
                                         alt={product.title}/>
                                     </div>
@@ -54,7 +65,7 @@ class HandmadeCards extends Component{
                         </Slider>
                     </div>
                     {/* <div className="col-md-6"> */}
-                    <HandmadeCardDetails />
+                    <HandmadeCardDetails product = {this.props.handMadeCards[this.state.currentSlide]}/>
 
                     {/* </div> */}
                 </div>

@@ -9,10 +9,20 @@ class Category extends Component {
     }
 
     componentDidMount() {
-        getCategoryById(this.props.match.params.id).then((response) => {
+       this.getCategory(this.props.match.params.id)
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.getCategory(nextProps.match.params.id)
+
+    }
+
+    getCategory(id) {
+        getCategoryById(id).then((response) => {
             this.setState({category:response.data})
         })
     }
+    
     render() {
         return(
             <div>
