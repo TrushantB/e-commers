@@ -46,10 +46,7 @@
     color: #2E2E2E !important;
     font-family: 'Raleway', sans-serif;
 }
-.category-title{
-    /* height: 60px; */
-    text-align: center;
-}
+
 .cat-title{
     margin-left: 20px;
     color: #2E3871;
@@ -370,7 +367,7 @@
     font-size: 25px;
 }
 /* MEDIA QUERIES */
-@media (min-width: 1280px){
+@media (max-width: 1024px){
     .container, 
     .container-lg,
     .container-md,
@@ -378,4 +375,29 @@
     .container-xl {
         max-width: 1240px;
     }
+/*Banner text css*/
+ .main-slider .category-title{
+    top: 0%;
+    font-size: 28px;
+}
+.main-slider .thanks-title{
+    top: 20%;
+    left: 10%;
+    font-size: 65px;
+}
+.main-slider .descrip-title{
+    top: 43%;
+    font-size: 33px;
+}
+.main-slider .btn-explore{
+    top: 38%;
+    left: 10%;
+    padding: 11px 0px;
+
+}
+.main-slider .button-wrap{
+    top:60%;
+    left: 3%;
+    width: 43%;
+}
 }

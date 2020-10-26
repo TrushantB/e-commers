@@ -33,13 +33,13 @@ class Header extends Component{
                             <img src= {require('../images/flipfairy-logo.png') }/>
                          </Link>
                           <Link to="/about" onClick = {() => this.handleSidenav()}>
-                                shop by category <i class="fa fa-angle-right arw-position" aria-hidden="true"></i>
+                                shop by category
                           </Link>
-                        <Link to="/about" onClick = {() => this.handleSidenav()}>fruits <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/product" onClick = {() => this.handleSidenav()}>vegetables <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i class=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i class="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                        <Link to="/about" onClick = {() => this.handleSidenav()}>fruits </Link>
+                        <Link to="/product" onClick = {() => this.handleSidenav()}>vegetables </Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery </Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy </Link>
+                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card</Link>
                         
                     </div>
 
