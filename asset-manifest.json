@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/e-commers/static/css/main.6cd26276.chunk.css",
-    "main.js": "/e-commers/static/js/main.4b3edb69.chunk.js",
-    "main.js.map": "/e-commers/static/js/main.4b3edb69.chunk.js.map",
+    "main.js": "/e-commers/static/js/main.6ba30c5b.chunk.js",
+    "main.js.map": "/e-commers/static/js/main.6ba30c5b.chunk.js.map",
     "runtime~main.js": "/e-commers/static/js/runtime~main.69d173ca.js",
     "runtime~main.js.map": "/e-commers/static/js/runtime~main.69d173ca.js.map",
     "static/css/2.5366411b.chunk.css": "/e-commers/static/css/2.5366411b.chunk.css",
     "static/js/2.d022b9bb.chunk.js": "/e-commers/static/js/2.d022b9bb.chunk.js",
     "static/js/2.d022b9bb.chunk.js.map": "/e-commers/static/js/2.d022b9bb.chunk.js.map",
     "index.html": "/e-commers/index.html",
-    "precache-manifest.617a0cfaafcfd2cc4f4f977480aba444.js": "/e-commers/precache-manifest.617a0cfaafcfd2cc4f4f977480aba444.js",
+    "precache-manifest.6a453e04cda94064961674112c659450.js": "/e-commers/precache-manifest.6a453e04cda94064961674112c659450.js",
     "service-worker.js": "/e-commers/service-worker.js",
     "static/css/2.5366411b.chunk.css.map": "/e-commers/static/css/2.5366411b.chunk.css.map",
     "static/css/main.6cd26276.chunk.css.map": "/e-commers/static/css/main.6cd26276.chunk.css.map",
