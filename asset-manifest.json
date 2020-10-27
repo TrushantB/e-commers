@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/e-commers/static/css/main.9ebaa775.chunk.css",
-    "main.js": "/e-commers/static/js/main.f5496725.chunk.js",
-    "main.js.map": "/e-commers/static/js/main.f5496725.chunk.js.map",
+    "main.js": "/e-commers/static/js/main.7ec75152.chunk.js",
+    "main.js.map": "/e-commers/static/js/main.7ec75152.chunk.js.map",
     "runtime~main.js": "/e-commers/static/js/runtime~main.69d173ca.js",
     "runtime~main.js.map": "/e-commers/static/js/runtime~main.69d173ca.js.map",
     "static/css/2.5366411b.chunk.css": "/e-commers/static/css/2.5366411b.chunk.css",
     "static/js/2.00d3076e.chunk.js": "/e-commers/static/js/2.00d3076e.chunk.js",
     "static/js/2.00d3076e.chunk.js.map": "/e-commers/static/js/2.00d3076e.chunk.js.map",
     "index.html": "/e-commers/index.html",
-    "precache-manifest.28f0a2e292eb849199256e3aa05e5f1e.js": "/e-commers/precache-manifest.28f0a2e292eb849199256e3aa05e5f1e.js",
+    "precache-manifest.d8e89767cf06ee8ee10d46c9cdcaa61b.js": "/e-commers/precache-manifest.d8e89767cf06ee8ee10d46c9cdcaa61b.js",
     "service-worker.js": "/e-commers/service-worker.js",
     "static/css/2.5366411b.chunk.css.map": "/e-commers/static/css/2.5366411b.chunk.css.map",
     "static/css/main.9ebaa775.chunk.css.map": "/e-commers/static/css/main.9ebaa775.chunk.css.map",
