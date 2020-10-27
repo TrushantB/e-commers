@@ -105,21 +105,21 @@ slider-wrapper {
 
 
 .button-left{
+  padding: 9px 12px;
   background-color: #ffffff;
   border: 1px solid #979797;
   border-right: none;
-  padding: 5px 10px;
 }
 .button-left i{
-  font-size: 22px;
+  font-size: 26px;
 }
 .button-right {
+  padding: 9px 12px;
   background-color: #ffffff;
   border: 1px solid #979797;
-  padding: 5px 10px;
 }
 .button-right i{
-  font-size: 22px;
+  font-size: 26px;
 }
 .catogory-title{
   margin-left: -15px;

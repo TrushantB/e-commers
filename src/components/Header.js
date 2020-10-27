@@ -12,7 +12,7 @@ class Header extends Component{
 
     handleSidenav() {
         if(!this.state.flag) {
-            document.getElementById("mySidenav").style.width = "450px";
+            document.getElementById("mySidenav").style.width = "510px";
         } else {
             document.getElementById("mySidenav").style.width = "0px";
 
@@ -34,8 +34,9 @@ class Header extends Component{
                      <img src= {require('../images/nav-icon.png') }/> 
                 </div>
 
-                    <div id="mySidenav" className="sidenav">
-                        <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}>&times;</a>
+                    <div>
+                            <div id="mySidenav" className="sidenav">
+                        <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}><i class="fa fa-times" aria-hidden="true"></i></a>
                          <Link to="/" onClick = {() => this.handleSidenav()}>
                             <img src= {require('../images/flipfairy-logo.png') }/>
                          </Link>
@@ -54,6 +55,7 @@ class Header extends Component{
                         <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i className=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
                         <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link> */}
                         
+                    </div>
                     </div>
 
                     <Link to='/' className="navbar-brand rounded-0 ">

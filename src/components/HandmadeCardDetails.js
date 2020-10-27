@@ -34,7 +34,7 @@ class HandmadeCardDetails extends Component {
                           
                       </ul>
                   </p>
-                      <h3 className="handmade-price">{this.props.product.price}$</h3>
+                      <h3 className="handmade-price my-3">{this.props.product.price}$</h3>
 
 
                   <div className="d-flex mt-4">

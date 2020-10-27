@@ -12,6 +12,11 @@
     --black: #444444;
     --danger: #FA0300;
 }
+body{
+    position: relative;
+    min-height: 100%;
+    position: relative;
+}
 
 .container{
     max-width:1190px !important ;
@@ -103,16 +108,15 @@
     padding: 12px 27px;
 }
 .cst-btn{
-
     border: 1px solid #6874E8;
-    padding: 12px 27px;
+    padding: 15px 40px;
     text-transform: uppercase;
 }
 .handmade-wrapper .buy-btn{
     font-family: 'Raleway', sans-serif; 
     font-size: 14px;
     border: 1px solid #6874E8;
-    padding: 12px 27px;
+    padding: 14px 40px;
     color: #ffffff;
     text-transform: uppercase;
     background: linear-gradient(225deg, #4488FF 0%, #490096 100%);
@@ -154,7 +158,9 @@
     font-weight: 700;
     color: #2E3871;
 }
-
+.explore:hover{
+    text-decoration: none;
+}
 .text-pink{
     color: #ff00ff;
 }
@@ -187,6 +193,7 @@
     object-fit: cover;
 }
 .category-card-img{
+    width: 100%;
    border-radius: 12px;
 }
 .main-slider .slick-slide{
@@ -308,7 +315,13 @@
 }
 
 /* footer */
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .site-footer{
+    margin-top: 80px;
     background-color: #242F3F;
 }
 .site-footer a{
@@ -329,8 +342,11 @@
 }
 .social-menu{
     font-size: 24px;
+    padding: 15px;
 }
-
+.handmade-contentwrap{
+    margin-bottom: 43px;
+}
 .handmade-wrapper .slick-slide img{
     border-radius: 13px;
 }
@@ -354,7 +370,7 @@
     margin-bottom:0;
 }
 .footer-menu{
-   
+    display: flex;
     text-align: left;
 }
 .social-wrap{

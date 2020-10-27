@@ -14,20 +14,37 @@
   
   /* The navigation menu links */
   .sidenav a {
-    font-size: 18px;
+    font-size: 24px !important;
+    line-height: 29px;
     color: #333333;
     display:block;
+    padding: 16px;
+    padding-left: 35px;
+    position: relative;
+    margin: 0 25px 0 0;
     border-bottom: 1px solid #DDDDDD;
-    text-transform:uppercase;
-    padding: 8px 8px 8px 32px;
+    text-transform:capitalize;
     text-decoration: none;
     transition: 0.3s;
     font-family: 'Raleway', sans-serif;
   }
-  
-  .arw-position{
-    margin-left:35%;
+  .sidenav :nth-child(3){
+    text-transform: uppercase;
+    margin: 0 25px 0 0px;
+    padding-left: 15px;
+
   }
+  .sidenav :nth-child(2){
+    margin: 0 25px 0 0px;
+    padding-left: 11px;
+    border-bottom: 1px solid #123593 !important;
+  }
+  .arw-position{
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+  }
+  
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
@@ -37,11 +54,11 @@
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 27px;
+    right:0;
     font-size: 36px;
     margin-left: 50px;
-    border:none;
+    border: none;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
