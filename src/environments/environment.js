@@ -1,3 +1,3 @@
 export const environment = {
-    api:"http://localhost:5000"
+    api:"https://flipfairy.herokuapp.com"
 }
