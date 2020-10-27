@@ -49,7 +49,7 @@ class HandmadeCards extends Component{
             //         <Header />
             //     </div>
             <div>
-                <div className='row   align-items-center'>
+                <div className='row align-items-center handmade-contentwrap'>
                     <div className="col-md-6">
                         <Slider {...settings}>
                             {

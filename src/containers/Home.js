@@ -13,7 +13,7 @@ export default class Home extends Component {
         <div className="container-fluid">
         
         <Carousel />
-        <div className='container'>
+        <div className='container'> 
           <div className='feature-wrapper'>
             <div className="py-4">
               <ProductList />

@@ -7,8 +7,8 @@ class Footer extends Component {
         return(
         <footer className="text-center text-lg-left site-footer text-white py-4">
           <div className="container p-4">
-            <div className="row align-items-center">
-              <div className="col-lg-3 col-md-6  footer-logo">
+            <div className="row align-items-center footer-wrapper">
+              <div className="footer-logo">
               <Link to='/' className="navbar-brand rounded-0 ">
                         <img src= {require('../images/FlipFairy-footer-logo.png')}/> 
                     </Link>
@@ -27,10 +27,8 @@ class Footer extends Component {
                     <Link to="/contact" className="nav-link">Contact Us</Link>
                   </li>
                 </ul>
-              </div>
-              
-              <div className="col-lg-2 col-md-6  footer-menu">
-                <ul className="list-unstyled mb-0">
+                <div className="footer-submenu">
+                <ul className="list-unstyled">
                   <li>
                     <Link to="/terms" className="nav-link">Terms of use</Link>
                   </li>
@@ -40,18 +38,18 @@ class Footer extends Component {
                   <li>
                     <Link to="/policy" className="nav-link">Cookies Policy</Link>
                   </li>
-                </ul>
-              </div>
-            
-              <div className='col-lg-5 col-md-6 social-wrap'>
+                  </ul>
+                </div>
+              </div>            
+              <div className='social-wrap'>
                 <ul className='list-unstyled d-flex justify-content-center social-menu'>
-                  <li className='px-2'>
+                  <li>
                     <a href="#."><i className='fa fa-facebook'></i></a>
                   </li>
-                  <li className='px-2'>
+                  <li className='px-5'>
                     <a href="#."><i className='fa fa-twitter'></i></a>
                   </li>
-                  <li className='px-2'>
+                  <li>
                     <a href="#."><i className='fa fa-instagram'></i></a>
                   </li>
                 </ul>
