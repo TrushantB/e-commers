@@ -4,8 +4,8 @@ import {connect} from 'react-redux';
 import  '../styles/Home/ProductItem.css'
  class ProductItem extends Component{
 
-    createLink(id,type){
-        return `/product/${id}`;
+    createLink(id){
+        return `/product/${this.props.product.type}/${id}`;
     }
 
     render(){

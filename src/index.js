@@ -31,9 +31,9 @@ ReactDOM.render(
             <div>
           <Header />
             <Route exact path='/' component={Home} />
-            <Route exact path='/product/:id' component={SingleProduct} />
+            <Route exact path='/product/:type/:id' component={SingleProduct} />
             <Route exact path='/product' component={Product} />
-            <Route exact path='/category/:id' component={Category} />
+            <Route exact path='/category/:key/:id' component={Category} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/about' component={About} />

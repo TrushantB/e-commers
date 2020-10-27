@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import ProductItem from './ProductItem';
 import Slider from 'react-slick';
 import '../styles/Home/ProductList.css'
-import { getProduct } from '../services/product'
+
 
 class ProductList extends Component{
     createProduct(list){
@@ -22,11 +22,11 @@ class ProductList extends Component{
       previous = () => {
         this.slider.slickPrev();
       }
-      componentDidMount() {
-        getProduct().then((response) => {
-          this.props.getProductData(response.data)
-        })
-      }
+      // componentDidMount() {
+      //   getProduct().then((response) => {
+      //     this.props.getProductData(response.data)
+      //   })
+      // }
 
     render(){
         let settings = {
@@ -54,7 +54,7 @@ class ProductList extends Component{
 
                <Slider className="row" ref={c => (this.slider = c)}  {...settings}>
                    {
-                       this.props.Products.length && this.createProduct(this.props.Products)
+                       this.props.products.length && this.createProduct(this.props.products)
                    }
                     
                 </Slider>
@@ -65,7 +65,7 @@ class ProductList extends Component{
 }
 
 const mapStateToProps = ({ product }) => ({
-    Products:product.featureProducts
+    // Products:product.featureProducts
   })
 
   const mapDispatchToProps = (dispatch) => {

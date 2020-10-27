@@ -45,7 +45,7 @@ class Header extends Component{
                           {
                               this.props.categoryData.map((item) => {
                                   return (
-                                      <Link key ={item.id} to={`/category/${item.id}`} onClick = {() => this.handleSidenav()}>{item.name} <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
+                                      <Link key ={item.id} to={`/category/${item.key}/${item.id}`} onClick = {() => this.handleSidenav()}>{item.name} <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
                                   )
                               })
                           }

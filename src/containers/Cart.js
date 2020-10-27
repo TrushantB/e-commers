@@ -52,7 +52,7 @@ class Cart extends Component{
                                               <tr>
                                               <td>{item.id}</td>
                                               <td><img className='img-thumbnail' src={item.image} alt={item.title}/></td>
-                                              <td><Link to={`product/${item.id}`}>{item.title}</Link></td>
+                                              <td>{item.title}</td>
                                               <td>{item.quantity}</td>
                                               <td>₹{item.price}</td>
                                               <td>

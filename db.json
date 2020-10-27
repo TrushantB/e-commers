@@ -38,7 +38,7 @@
       "id": "11",
       "title": "Fresh Organic Tomatoes",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
-      "category": "Fruits",
+      "categoryId": 1,
       "seller": "ABC Farm",
       "price": 32,
       "type":"feature_product",
@@ -50,7 +50,7 @@
       "id": "12",
       "title": "Croissants Puff Pastry",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(1).png?alt=media&token=fa405d6d-26eb-440a-94a2-1e4a56c3d655",
-      "category": "Bakery",
+      "categoryId": 3,
       "seller": "PQR Farm",
       "price": 35,
       "type":"feature_product",
@@ -62,7 +62,7 @@
       "id": "13",
       "title": "Class A Apple Basket",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(2).png?alt=media&token=bdcfcb68-37ca-4ec2-a9ac-9d1a0ebf52d9",
-      "category": "Fruits",
+      "categoryId": 1,
       "seller": "IJK Farm",
       "price": 30,
       "type":"feature_product",
@@ -74,7 +74,7 @@
       "id": "14",
       "title": "Premium  Grapes",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(3).png?alt=media&token=6d8fe778-a184-4411-aca7-cacaf62aa7e8",
-      "category": "Fruits",
+      "categoryId": 1,
       "seller": "RMD Farm",
       "price": 36,
       "type":"feature_product",
@@ -86,7 +86,7 @@
       "id": "15",
       "title": "Class A Tomatoes Basket",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
-      "category": "Fruits",
+      "categoryId": 1,
       "seller": "XYZ Farm",
       "price": 34,
       "type":"feature_product",
@@ -98,7 +98,7 @@
       "id": "16",
       "title": "Pack of 20 Cards",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
-      "category": "Handmade",
+      "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 31,
       "type":"handmade_card",
@@ -110,7 +110,7 @@
       "id": "17",
       "title": "Pack of 12 Cards",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(9).png?alt=media&token=9b292fe8-2134-491f-876f-142ce1bd492a",
-      "category": "Handmade",
+       "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 33,
       "type":"handmade_card",
@@ -122,7 +122,7 @@
       "id": "18",
       "title": "3 Trees Blank Cards",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
-      "category": "Handmade",
+       "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 31,
       "type":"handmade_card",
@@ -134,43 +134,68 @@
       "id": "19",
       "title": "Trees Blank Card",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(11).png?alt=media&token=51371ee3-afa7-4a39-91f4-49b838e5c44b",
-      "category": "Handmade",
+      "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 32,
       "type":"handmade_card",
       "subtitle": "1kg aroung 16 pieces",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+    },
+    {
+      "id": "20",
+      "title": "1 kg paneer",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBmvWhxHGoJaFt2zj_ic4qUo9Ktuh29GOVLg&usqp=CAU",
+      "categoryId": 4,
+      "seller": "XYZ Farm",
+      "price": 32,
+      "type":"dairy",
+      "subtitle": "1kg aroung 5 pieces",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
+    },
+    {
+      "id": "21",
+      "title": "Brocli",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsfS0UmKOqB6jX2MeeODRSZDSNQvCdUPAoKg&usqp=CAU",
+      "categoryId": 2,
+      "seller": "XYZ Farm",
+      "price": 32,
+      "type":"vagitables",
+      "subtitle": "1kg aroung 5 pieces",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."
     }
-    
   ],
   "Category":[
     {
-      "id": "111",
+      "id": 1,
       "name": "Fruits",
+      "key": "fruits",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(4).png?alt=media&token=71ef5590-ea5f-43b4-bd64-33a04ab410bf"
     },
     {
-      "id": "222",
+      "id": 2,
       "name": "Vegitables",
+      "key": "vegitables",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(5).png?alt=media&token=35613581-d77c-4da9-be73-5a4ffdba06ca"
     },
     {
-      "id": "333",
+      "id": 3,
       "name": "Bakery",
+      "key": "bakery",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(6).png?alt=media&token=9cf258cc-cef1-4fbb-8bf9-88f890f2db47"
 
     },
     {
-      "id": "444",
+      "id": 4,
       "name": "Dairy",
+      "key": "dairy",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
 
     },
     {
-      "id": "-555",
+      "id": 5,
       "name": "Handmade Cards",
+      "key": "handmade_cards",
       "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
-
     }
    ]
 }

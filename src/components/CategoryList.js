@@ -12,7 +12,7 @@ class CategoryList extends Component{
         productItem.map((product,index)=> {
             if(index > 3)
             return 0;
-            pList.push(<CategoryItem key={product.id} product={product} page="category"/>);
+            pList.push(<CategoryItem key={product.id} product={product}/>);
         });
         return pList;
     }

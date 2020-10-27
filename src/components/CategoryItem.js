@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class CategoryItem extends Component{
 
     createLink(id){
-        return `/category/${id}`;
+        return `/category/${this.props.product.key}/${id}`;
     }
 
     render(){
@@ -17,15 +17,6 @@ export default class CategoryItem extends Component{
                     src={this.props.product.image} alt={this.props.product.title} 
                 />
                 </Link>
-                {/* <div className="card-body">
-                    <Link to={this.createLink(this.props.product.id)} className="no-underline">
-                        <h6 className="card-title category-title mt-1">{this.props.product.title}</h6>
-                    </Link>
-                    <div className="card-text"><small className="text-muted"><p>Seller:{this.props.product.brand}</p></small></div>
-                    <div>
-                        <p className='text-left'>₹{this.props.product.price}</p>
-                    </div>
-                </div> */}
             </div>
         );
     }

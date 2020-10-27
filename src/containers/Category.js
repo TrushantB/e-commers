@@ -1,38 +1,57 @@
 import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getCategoryById } from '../services/category'
+import { getProductByCategory } from '../services/product'
+import ProductItem from '../components/ProductItem';
 class Category extends Component {
 
     state = {
-        category:null
+        category:null,
+        categoryProducts:[]
     }
 
     componentDidMount() {
-       this.getCategory(this.props.match.params.id)
+        getProductByCategory(this.props.match.params.id).then((response) => {
+        this.setState({categoryProducts:response.data})
+    })
     }
 
     componentWillReceiveProps(nextProps) {
-        this.getCategory(nextProps.match.params.id)
-
-    }
-
-    getCategory(id) {
-        getCategoryById(id).then((response) => {
-            this.setState({category:response.data})
+        getProductByCategory(nextProps.match.params.id).then((response) => {
+            this.setState({categoryProducts:response.data})
         })
+
     }
-    
-    render() {
+    createProduct(list){
+        let productItem = list;
+
+        let pList = [];
+        productItem.map((product)=> {
+            pList.push(<ProductItem key={product.id} product={product}/>);
+        });
+        return pList;
+    }
+
+    createGrid(){
+        this.productItems = this.createProduct(this.state.categoryProducts);
+        let row=[];
+        for(let j=0; j<this.productItems.length; j++){
+            row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
+                {this.productItems[j]}
+            </li>)
+        }
+        return row;
+    }
+
+    render(){
         return(
-            <div>
-                {
-                    this.state.category ? <h2>{this.state.category.name} products here.</h2> : null
-                }
-            </div>
-        )
+            <ul className='row product-list'>
+                {this.createGrid()}
+            </ul>
+        );
     }
 }
+
 
 const mapStateToProps = ({ product }) => ({
     Products:product.products

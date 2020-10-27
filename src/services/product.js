@@ -9,3 +9,7 @@ export const getProduct = () => {
     return get(`/Product/${id}`);
  }
 
+ export const getProductByCategory = (id) => {
+   return get(`/Product?categoryId=${id}`);
+}
+
