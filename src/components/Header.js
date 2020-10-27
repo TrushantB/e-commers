@@ -35,7 +35,7 @@ class Header extends Component{
                 </div>
 
                     <div>
-                            <div id="mySidenav" className="sidenav">
+                        <div id="mySidenav" className="sidenav">
                         <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}><i class="fa fa-times" aria-hidden="true"></i></a>
                          <Link to="/" onClick = {() => this.handleSidenav()}>
                             <img src= {require('../images/flipfairy-logo.png') }/>
@@ -50,13 +50,14 @@ class Header extends Component{
                                   )
                               })
                           }
-                        {/* <Link to="/about" onClick = {() => this.handleSidenav()}>fruits <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>bakery <i className=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>dairy <i className=" fa fa-angle-right arw-position" aria-hidden="true"></i></Link>
-                        <Link to="/Category" onClick = {() => this.handleSidenav()}>handmade card <i className="fa fa-angle-right arw-position" aria-hidden="true"></i></Link> */}
-                        
                     </div>
                     </div>
+                    <div className={this.state.flag ? "overlay-nav" : null }
+                         onClick = {() => {
+                            this.setState({flag:false})
+                            this.handleSidenav()
+                         }}
+                    ></div>
 
                     <Link to='/' className="navbar-brand rounded-0 ">
                         <img src= {require('../images/flipfairy-logo.png')}/> 

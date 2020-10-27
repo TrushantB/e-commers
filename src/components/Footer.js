@@ -44,13 +44,13 @@ class Footer extends Component {
               <div className='social-wrap'>
                 <ul className='list-unstyled d-flex justify-content-center social-menu'>
                   <li>
-                    <a href="#."><i className='fa fa-facebook'></i></a>
+                    <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C318504236042%7Ce%7Cfacebook%7C&placement=&creative=318504236042&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066387003%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9062097%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwit_8BRCoARIsAIx3Rj7shPmr1f5hZF13-7s54nrrepHSbVlTNCrpMxgHJ7kBKU8aT0Ra51IaArW8EALw_wcB" target="_blank"><i className='fa fa-facebook'></i></a>
                   </li>
                   <li className='px-5'>
-                    <a href="#."><i className='fa fa-twitter'></i></a>
+                    <a href="https://twitter.com/login?lang=en" target="_blank"><i className='fa fa-twitter'></i></a>
                   </li>
                   <li>
-                    <a href="#."><i className='fa fa-instagram'></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i className='fa fa-instagram'></i></a>
                   </li>
                 </ul>
                 <div className="text-center p-3 copyright-text">

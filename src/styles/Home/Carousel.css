@@ -65,14 +65,13 @@ slider-wrapper {
   line-height: initial;
   letter-spacing:0;
   font-size:90px;
-  font-weight: 600;
   font-family: 'Raleway', sans-serif;
 
 }
 .descrip-title{ 
   font-size:44px;
   line-height: initial;
-  font-weight: bold;
+  font-weight: 600;
   font-family: 'Raleway', sans-serif;
 }
 
