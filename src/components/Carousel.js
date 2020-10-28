@@ -4,6 +4,7 @@ import '../styles/Home/Carousel.css'
 import { connect } from 'react-redux';
 import { getHomeBanner } from '../services/home';
 import { Link } from 'react-router-dom';
+import { images } from "../common/images";
 
  class Carousel extends Component {
 
@@ -68,7 +69,7 @@ import { Link } from 'react-router-dom';
           {this.props.bannerData.map((slide) =>
 
             <div className="slick-slide" key={slide.id}>
-              <img className="slick-slide-image" src={`${slide.image}`} />
+              <img className="slick-slide-image" src={`${images[slide.image]}`} />
               <div className ="banner-text">
               <label className="slick-slide-label category-title">{slide.category}</label>
               <label className="slick-slide-label thanks-title">{slide.title}</label> 

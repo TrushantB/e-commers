@@ -2,6 +2,7 @@ import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import  '../styles/Home/ProductItem.css'
+import { images } from '../common/images';
  class ProductItem extends Component{
 
     createLink(id){
@@ -14,7 +15,8 @@ import  '../styles/Home/ProductItem.css'
             <div className="p-0" >
                 <Link to={this.createLink(this.props.product.id)}>
                 <img width='250px' height='250px' className="card-img-top"
-                    src={this.props.product.image} alt={this.props.product.title} 
+                    src={images[this.props.product.image]} alt={this.props.product.title} 
+                    // src={this.props.product.image} alt={this.props.product.title} 
                 />
                 </Link>
                 <div className="card-body ">

@@ -6,7 +6,7 @@
       "title":"Thank You",
       "subtitle":"Greeting Cards 1",
       "label":"Loren ipsum",
-      "image":"https://www.sagefruit.com/wp-content/uploads/2017/02/apricots-1509634_1920-2-1300x500.jpg"
+      "image":"banner1"
     },
     {
       "id":17,
@@ -14,7 +14,7 @@
       "title":"Thank You",
       "subtitle":"Greeting Cards 2",
       "label":"Loren ipsum",
-      "image":"https://delmonte-sitefinity-public.s3.amazonaws.com/images/default-source/hompage-carousel-backgrounds/delmonte-homepagecarousel--pride_rainbow_horizontal_hi_branded_heart_june2019_global-1300x500.jpg?sfvrsn=3eec0d17_2"
+      "image":"banner2"
     },
     {
       "id":18,
@@ -22,7 +22,7 @@
       "title":"Thank You",
       "subtitle":"Greeting Cards 3",
       "label":"Loren ipsum",
-      "image":"https://iamherbalifenutrition.com/wp-content/uploads/2019/07/Exotic-Fruits-1300x500.png"
+      "image":"banner3"
     },
     {
       "id":19,
@@ -30,14 +30,14 @@
       "title":"Thank You",
       "subtitle":"Greeting Cards 4",
       "label":"Loren ipsum",
-      "image":"https://www.nutritionforostomates.com.au/wp-content/uploads/2016/06/food-nutrients-for-ostomates-1300x500.jpg"
+      "image":"banner4"
     }
   ],
   "Product": [
     {
       "id": "11",
       "title": "Fresh Organic Tomatoes",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
+      "image": "tomato",
       "categoryId": 1,
       "seller": "ABC Farm",
       "price": 32,
@@ -49,7 +49,7 @@
     {
       "id": "12",
       "title": "Croissants Puff Pastry",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(1).png?alt=media&token=fa405d6d-26eb-440a-94a2-1e4a56c3d655",
+      "image": "pastry",
       "categoryId": 3,
       "seller": "PQR Farm",
       "price": 35,
@@ -61,7 +61,7 @@
     {
       "id": "13",
       "title": "Class A Apple Basket",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(2).png?alt=media&token=bdcfcb68-37ca-4ec2-a9ac-9d1a0ebf52d9",
+      "image": "apple",
       "categoryId": 1,
       "seller": "IJK Farm",
       "price": 30,
@@ -73,7 +73,7 @@
     {
       "id": "14",
       "title": "Premium  Grapes",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(3).png?alt=media&token=6d8fe778-a184-4411-aca7-cacaf62aa7e8",
+      "image": "grapes",
       "categoryId": 1,
       "seller": "RMD Farm",
       "price": 36,
@@ -85,7 +85,7 @@
     {
       "id": "15",
       "title": "Class A Tomatoes Basket",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision.png?alt=media&token=d7c4b95a-7991-404d-b97b-961c97ac8690",
+      "image": "tomato",
       "categoryId": 1,
       "seller": "XYZ Farm",
       "price": 34,
@@ -97,7 +97,7 @@
     {
       "id": "16",
       "title": "Pack of 20 Cards",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
+      "image": "card1",
       "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 31,
@@ -109,7 +109,7 @@
     {
       "id": "17",
       "title": "Pack of 12 Cards",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(9).png?alt=media&token=9b292fe8-2134-491f-876f-142ce1bd492a",
+      "image": "card2",
        "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 33,
@@ -121,7 +121,7 @@
     {
       "id": "18",
       "title": "3 Trees Blank Cards",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(10).png?alt=media&token=629a8ea4-e23b-42b9-b682-b7644a7d3d00",
+      "image": "card3",
        "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 31,
@@ -133,7 +133,7 @@
     {
       "id": "19",
       "title": "Trees Blank Card",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(11).png?alt=media&token=51371ee3-afa7-4a39-91f4-49b838e5c44b",
+      "image": "card4",
       "categoryId": 5,
       "seller": "XYZ Farm",
       "price": 32,
@@ -144,7 +144,7 @@
     {
       "id": "20",
       "title": "1 kg paneer",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBmvWhxHGoJaFt2zj_ic4qUo9Ktuh29GOVLg&usqp=CAU",
+      "image": "panner",
       "categoryId": 4,
       "seller": "XYZ Farm",
       "price": 32,
@@ -155,7 +155,7 @@
     {
       "id": "21",
       "title": "Brocli",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsfS0UmKOqB6jX2MeeODRSZDSNQvCdUPAoKg&usqp=CAU",
+      "image": "brocli",
       "categoryId": 2,
       "seller": "XYZ Farm",
       "price": 32,
@@ -169,33 +169,33 @@
       "id": 1,
       "name": "Fruits",
       "key": "fruits",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(4).png?alt=media&token=71ef5590-ea5f-43b4-bd64-33a04ab410bf"
+      "image": "fruit"
     },
     {
       "id": 2,
       "name": "Vegitables",
       "key": "vegitables",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(5).png?alt=media&token=35613581-d77c-4da9-be73-5a4ffdba06ca"
+      "image": "vegitables"
     },
     {
       "id": 3,
       "name": "Bakery",
       "key": "bakery",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(6).png?alt=media&token=9cf258cc-cef1-4fbb-8bf9-88f890f2db47"
+      "image": "bakery"
 
     },
     {
       "id": 4,
       "name": "Dairy",
       "key": "dairy",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
+      "image": "dairy"
 
     },
     {
       "id": 5,
       "name": "Handmade Cards",
       "key": "handmade_cards",
-      "image": "https://firebasestorage.googleapis.com/v0/b/myapp-281407.appspot.com/o/FlipFairy-Preview-Mode-InVision%20(7).png?alt=media&token=07e3f46b-717a-4b9d-bc35-2616be55a65e"
+      "image": "dairy"
     }
    ]
 }

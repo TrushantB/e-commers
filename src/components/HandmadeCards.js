@@ -6,6 +6,7 @@ import HandmadeCardDetails from './HandmadeCardDetails';
 import HandmadeList from './HandmadeList';
 
 import Slider from 'react-slick';
+import { images } from '../common/images';
 
 class HandmadeCards extends Component{
 
@@ -56,7 +57,7 @@ class HandmadeCards extends Component{
                                 this.props.handMadeCards.length &&  this.props.handMadeCards.map((product) => {
                                     return(
                                     <div key={product.id}><img className='img-fluid handmade-page-img' 
-                                        src={product.image}
+                                        src={images[product.image]}
                                         alt={product.title}/>
                                     </div>
                                     )

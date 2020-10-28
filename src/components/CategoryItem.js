@@ -1,5 +1,6 @@
 import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
+import { images } from '../common/images';
 
 
 export default class CategoryItem extends Component{
@@ -14,7 +15,7 @@ export default class CategoryItem extends Component{
             <div className="p-0">
                 <Link to={this.createLink(this.props.product.id)}>
                 <img width='250px' height='250px' className="category-card-img"
-                    src={this.props.product.image} alt={this.props.product.title} 
+                    src={images[this.props.product.image]} alt={this.props.product.title} 
                 />
                 </Link>
             </div>
