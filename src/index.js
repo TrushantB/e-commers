@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
-import { Route, HashRouter, BrowserRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
@@ -28,7 +28,7 @@ import Search from "./containers/Search";
 ReactDOM.render(
 <Provider store={store}>
     <div>
-        <BrowserRouter >
+        <HashRouter >
             <div>
           <Header />
             <Route exact path='/' component={Home} />
@@ -45,7 +45,7 @@ ReactDOM.render(
             <Route exact path='/search' component={Search} />
           <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
         {/* <ReduxToastr
             timeOut={4000}
             newestOnTop={false}
