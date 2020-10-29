@@ -1,5 +1,6 @@
 import React,{ Component} from 'react';
 import { Link } from 'react-router-dom';
+import { images } from '../common/images';
 
 
 export default class CategoryItem extends Component{
