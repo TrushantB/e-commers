@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 
 class Search extends Component {
      state = {
-         searchedData : []
+         searchedData : [],
+         searchCompleted:false
      }
      componentDidMount() {
         searchProduct(this.props.searchText).then((response) => {
