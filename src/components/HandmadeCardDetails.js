@@ -7,7 +7,6 @@ class HandmadeCardDetails extends Component {
 
     constructor(props){
         super(props);
-        console.log(this.props.product);
         this.addToCart = this.addToCart.bind(this);
     }
 

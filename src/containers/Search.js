@@ -12,12 +12,14 @@ class Search extends Component {
      }
      componentDidMount() {
         searchProduct(this.props.searchText).then((response) => {
-            this.setState({searchedData:response.data})
+            this.setState({searchedData:response.data, searchCompleted:true})
         })
      }
-    componentWillReceiveProps(nextProps) {    
+    componentWillReceiveProps(nextProps) { 
+        this.setState({searchCompleted:false})   
         searchProduct(nextProps.searchText).then((response) => {
-            this.setState({searchedData:response.data})
+            console.log("response.data",response.data,nextProps.searchText);
+            this.setState({searchedData:response.data,searchCompleted:true})
         })
     }
 
@@ -45,28 +47,32 @@ class Search extends Component {
     render(){
         return(
             <ul className='row product-list'>
-                { this.state.searchedData.length && this.props.searchText ?
+                { this.state.searchedData.length && 
+                this.props.searchText ?
                 this.createGrid() :
                 <div className="container data-not-found-wrapper">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="error-template">
-                                <h1>
-                                    Oops!</h1>
-                                <h2>
-                                    Result Not Found</h2>
-                                <div className="error-details">
-                                    Try to search for another product!
-                                </div>
-                                <div className="error-actions">
-                                    <Link to="/" className="btn btn-primary btn-lg">
-                                    <span className="glyphicon glyphicon-home"></span>
-                                        Back To Home 
-                                    </Link>
+                    {
+                        // this.state.searchCompleted &&
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="error-template">
+                                    <h1>
+                                        Oops!</h1>
+                                    <h2>
+                                        Result Not Found</h2>
+                                    <div className="error-details">
+                                        Try to search for another product!
+                                    </div>
+                                    <div className="error-actions">
+                                        <Link to="/" className="btn btn-primary btn-lg">
+                                        <span className="glyphicon glyphicon-home"></span>
+                                            Back To Home 
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 </div>
 
                 }
@@ -83,7 +89,8 @@ const mapStateToProps = ({ product,common }) => ({
   const mapDispatchToProps = (dispatch) => {
     const { getProductData } = require('../redux/actions')
     return {
-        getProductData: (data) => dispatch(getProductData(data))
+        getProductData: (data) => dispatch(getProductData(data)),
+        // searchText: (data) => dispatch(searchText(data)),
     }
   }
 

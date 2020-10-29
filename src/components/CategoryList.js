@@ -30,7 +30,6 @@ class CategoryList extends Component{
 
     componentDidMount() {
         getCategories().then((response) => {
-            console.log(response.data);
           this.props.getCategoryData(response.data)
         })
       }

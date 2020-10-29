@@ -76,8 +76,6 @@ export default (state = INITIAL_STATE, action) => {
     case GET_PRODUCT:
     state.featureProducts = action.payload.filter(item => item.type=='feature_product'); 
     state.handMadeCards = action.payload.filter(item => item.type=='handmade_card');
-    action.payload.map((item) => console.log(item.type))
-
       return { ...state, 
         products: action.payload,
         featureProducts:[...state.featureProducts],

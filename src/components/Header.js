@@ -22,7 +22,6 @@ class Header extends Component{
     }
     componentDidMount() {
         getCategories().then((response) => {
-            console.log(response.data);
           this.props.getCategoryData(response.data)
         })
       }
@@ -72,7 +71,9 @@ class Header extends Component{
                             <input type="text" className="form-control" id="inputPassword2" 
                             placeholder="Search product, store &amp; seller"
                             // onChange={(e) => this.keyPress(e)}
-                            onChange={(e) => this.setState({searchText:e.target.value})}
+                            onChange={(e) => {
+                                this.setState({searchText:e.target.value})
+                            }}
                             // onKeyEnter={(e) => this.keyPress(e)}
                             />
                             <button type="submit" className="btn btn-text position-absolute btn-search" 

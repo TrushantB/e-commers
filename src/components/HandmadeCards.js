@@ -43,7 +43,6 @@ class HandmadeCards extends Component{
               },
           };
 
-          console.log("currentSlide",this.state.currentSlide);
         return(
             // <div className=''>
             //     <div className='row header p-3'>
