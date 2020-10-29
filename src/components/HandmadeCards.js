@@ -65,7 +65,10 @@ class HandmadeCards extends Component{
                         </Slider>
                     </div>
                     {/* <div className="col-md-6"> */}
-                    <HandmadeCardDetails product = {this.props.handMadeCards[this.state.currentSlide]}/>
+                    {
+                        this.props.handMadeCards[this.state.currentSlide].title &&
+                        <HandmadeCardDetails product = {this.props.handMadeCards[this.state.currentSlide]}/>
+                    }
 
                     {/* </div> */}
                 </div>

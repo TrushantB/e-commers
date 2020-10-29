@@ -1,13 +1,14 @@
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import '../styles/Home/Header.css'
 import { slide as Menu } from 'react-burger-menu'
 import { getCategories } from '../services/category'
 
 class Header extends Component{
     state = {
-        flag:false
+        flag:false,
+        searchText:''
     }
 
     handleSidenav() {
@@ -25,6 +26,10 @@ class Header extends Component{
           this.props.getCategoryData(response.data)
         })
       }
+      keyPress(e,history){
+          e.preventDefault()
+          history.push("/search")
+     }
 
     render(){
         return(
@@ -36,7 +41,7 @@ class Header extends Component{
 
                     <div>
                         <div id="mySidenav" className="sidenav">
-                        <a href="javascript:void(0)" className="closebtn" onClick={() => this.handleSidenav()}><i class="fa fa-times" aria-hidden="true"></i></a>
+                        <a className="closebtn" onClick={() => this.handleSidenav()}><i className="fa fa-times" aria-hidden="true"></i></a>
                          <Link to="/" onClick = {() => this.handleSidenav()}>
                             <img src= {require('../images/flipfairy-logo.png') }/>
                          </Link>
@@ -63,10 +68,18 @@ class Header extends Component{
                         <img src= {require('../images/flipfairy-logo.png')}/> 
                     </Link>
                     <div className="header-search">
-                        <form className="form-inline m-auto position-relative">
-                            <input type="text" className="form-control" id="inputPassword2" placeholder="Search product, store &amp; seller"/>
-                            <button type="su bmit" className="btn btn-text position-absolute btn-search">
-                                <img src={require('../images/search-icon.png')}/>
+                        <form className="form-inline m-auto position-relative" onSubmit={(e) => this.keyPress(e,this.props.history)}>
+                            <input type="text" className="form-control" id="inputPassword2" 
+                            placeholder="Search product, store &amp; seller"
+                            // onChange={(e) => this.keyPress(e)}
+                            onChange={(e) => this.setState({searchText:e.target.value})}
+                            // onKeyEnter={(e) => this.keyPress(e)}
+                            />
+                            <button type="submit" className="btn btn-text position-absolute btn-search" 
+                            onClick={() => this.props.searchText(this.state.searchText)}>
+                                <Link to="/search">
+                                    <img src={require('../images/search-icon.png')}/>
+                                </Link>
                             </button>
                         </form>
                     </div>
@@ -95,9 +108,10 @@ const mapStateToProps = ({ category, cart }) => ({
   })
 
   const mapDispatchToProps = (dispatch) => {
-    const { getCategoryData } = require('../redux/actions')
+    const { getCategoryData, searchText } = require('../redux/actions')
     return {
-        getCategoryData: (data) => dispatch(getCategoryData(data))
+        getCategoryData: (data) => dispatch(getCategoryData(data)),
+        searchText: (data) => dispatch(searchText(data)),
     }
   }
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

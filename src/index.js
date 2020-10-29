@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter, BrowserRouter } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
@@ -22,12 +22,13 @@ import Contact from "./containers/Contact";
 import Policy from "./containers/Policy";
 import PrivacyPolicy from "./containers/PrivacyPolicy";
 import Terms from "./containers/Terms";
+import Search from "./containers/Search";
 
 
 ReactDOM.render(
 <Provider store={store}>
     <div>
-        <HashRouter >
+        <BrowserRouter >
             <div>
           <Header />
             <Route exact path='/' component={Home} />
@@ -41,9 +42,10 @@ ReactDOM.render(
             <Route exact path='/policy' component={Policy} />
             <Route exact path='/privacy-policy' component={PrivacyPolicy} />
             <Route exact path='/terms' component={Terms} />
+            <Route exact path='/search' component={Search} />
           <Footer />
             </div>
-        </HashRouter>
+        </BrowserRouter>
         {/* <ReduxToastr
             timeOut={4000}
             newestOnTop={false}

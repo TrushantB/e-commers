@@ -5,6 +5,7 @@ import HandmadeCard from './HandmadeCard';
 import Cart from './Cart';
 import HomeReducer from './HomeReducer';
 import {reducer as toastrReducer} from 'react-redux-toastr'
+import CommonReducer from './CommonReducer';
 
 export default combineReducers({
   toastr: toastrReducer,
@@ -13,5 +14,6 @@ export default combineReducers({
   handmade:HandmadeCard,
   cart:Cart,
   home:HomeReducer,
+  common:CommonReducer,
 
 })

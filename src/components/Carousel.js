@@ -4,6 +4,7 @@ import '../styles/Home/Carousel.css'
 import { connect } from 'react-redux';
 import { getHomeBanner } from '../services/home';
 import { Link } from 'react-router-dom';
+import ProgressiveImage from "../common/progressiveImage";
 
  class Carousel extends Component {
 
@@ -65,10 +66,22 @@ import { Link } from 'react-router-dom';
 
         <Slider {...settings}>
 
-          {this.props.bannerData.map((slide) =>
+          {
+          this.props.bannerData.map((slide) =>
 
-            <div className="slick-slide" key={slide.id}>
-              <img className="slick-slide-image" src={`${slide.image}`} />
+            <div className="slick-slide banner-image-wrapper" key={slide.id}>
+              {/* <ProgressiveImage src={`${slide.image}`} /> */}
+              {
+                slide.image ? 
+                <img className="slick-slide-image" src={`${slide.image}`} /> :
+                <svg width="1300px" height="500px" >  
+                    <rect width="1300px" height="500px"  fill="#CCC" />
+                </svg>
+
+              }
+              
+              {
+                slide.title && 
               <div className ="banner-text">
               <label className="slick-slide-label category-title">{slide.category}</label>
               <label className="slick-slide-label thanks-title">{slide.title}</label> 
@@ -86,10 +99,13 @@ import { Link } from 'react-router-dom';
                   </button>
               </div>
               </div>
+              }
             </div>
             
+            
 
-          )}
+          ) 
+          }
 
         </Slider>
 

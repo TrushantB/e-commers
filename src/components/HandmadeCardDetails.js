@@ -24,16 +24,11 @@ class HandmadeCardDetails extends Component {
                 this.props.product && 
                 <>
                 <h3 className='handmade-title mb-3'>{this.props.product.title}</h3>
-                  <p className="mb-3 text-muted">
+                  <div className="mb-3 text-muted">
                       <ul className="handmadeinfo-list">
-                        {/* <li>x7 folded cards 140lb</li>
-                        <li>140lb paper with matching envelopes</li>
-                        <li>Off-white textured paper</li>
-                        <li>Hand drawn in ink, with </li>*/}
-                        <li>{this.props.product.description}</li> 
-                          
+                        <p>{this.props.product.description}</p> 
                       </ul>
-                  </p>
+                  </div>
                       <h3 className="handmade-price my-3">{this.props.product.price}$</h3>
 
 
@@ -46,7 +41,7 @@ class HandmadeCardDetails extends Component {
                                 </div>
                   
                             <div className="ml-sm-2">
-                                <button onClick={this.props.addToCart(this.props.product,1)}  className="btn m-1 buy-btn explore">
+                                <button onClick={() => this.props.addToCart(this.props.product,1)}  className="btn m-1 buy-btn explore">
                                 <span className="Addtocart">Buy Now</span>
                               </button>
                           </div>

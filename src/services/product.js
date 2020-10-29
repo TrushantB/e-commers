@@ -13,3 +13,7 @@ export const getProduct = () => {
    return get(`/Product?categoryId=${id}`);
 }
 
+export const searchProduct = (searchText) => {
+   return get(`/Product/?title_like=${searchText}`);
+}
+

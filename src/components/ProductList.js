@@ -65,7 +65,7 @@ class ProductList extends Component{
 }
 
 const mapStateToProps = ({ product }) => ({
-    // Products:product.featureProducts
+    products:product.featureProducts
   })
 
   const mapDispatchToProps = (dispatch) => {

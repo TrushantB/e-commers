@@ -12,7 +12,7 @@ import  '../styles/Home/ProductItem.css'
    
         return(
             <div className="p-0" >
-                <Link to={this.createLink(this.props.product.id)}>
+                <Link to={this.props.product.title ? this.createLink(this.props.product.id,this.props.product.type) : ''}>
                 <img width='250px' height='250px' className="card-img-top"
                     src={this.props.product.image} alt={this.props.product.title} 
                 />

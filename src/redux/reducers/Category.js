@@ -3,7 +3,34 @@ import {
 } from '../types';
 
 const INITIAL_STATE = {
-  categoryData:[]
+  categoryData:[
+    {
+      "id": 1,
+      "name": "",
+      "key": "",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "",
+      "key": "",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "",
+      "key": "",
+      "image": ""
+
+    },
+    {
+      "id": 4,
+      "name": "",
+      "key": "",
+      "image": ""
+
+    }
+  ]
 }
 
 export default (state = INITIAL_STATE, action) => {

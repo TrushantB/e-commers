@@ -2,11 +2,73 @@ import {
   GET_PRODUCT
 } from '../types';
 // import products from '../../product.json';
+let products = [
+  {
+    "id": "11",
+    "title": "",
+    "image": "",
+    "categoryId": "",
+    "seller": "",
+    "price": "",
+    "type":"",
+    "subtitle": "",
+    "description": ""
+
+  },
+  {
+    "id": "12",
+    "title": "",
+    "image": "",
+    "categoryId": "",
+    "seller": "",
+    "price": "",
+    "type":"",
+    "subtitle": "",
+    "description": ""
+
+  },
+  {
+    "id": "13",
+    "title": "",
+    "image": "",
+    "categoryId": "",
+    "seller": "",
+    "price": "",
+    "type":"",
+    "subtitle": "",
+    "description": ""
+
+  },
+  {
+    "id": "14",
+    "title": "",
+    "image": "",
+    "categoryId": "",
+    "seller": "",
+    "price": "",
+    "type":"",
+    "subtitle": "",
+    "description": ""
+
+  },
+  {
+    "id": "15",
+    "title": "",
+    "image": "",
+    "categoryId": "",
+    "seller": "",
+    "price": "",
+    "type":"",
+    "subtitle": "",
+    "description": ""
+
+  }
+]
 
 const INITIAL_STATE = {
-  products: [],
-  featureProducts:[],
-  handMadeCards:[]
+  products: products,
+  featureProducts:products,
+  handMadeCards:products
 }
 
 export default (state = INITIAL_STATE, action) => {
