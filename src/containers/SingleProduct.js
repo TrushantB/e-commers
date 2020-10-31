@@ -60,18 +60,18 @@ class SingleProduct extends Component{
                         </div>
                         
                         <img className='img-fluid product-page-img' 
-                            src={images[this.state.product.image]}
+                            src={this.state.product.image}
                             alt={this.state.product.title}/>
 
                             <div className="row productdetailsimg-row">
                                 <div className="col-4">
-                                    <img className="product-page-imgtab" src={images[this.state.product.image]} alt="productimg1"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg1"  />
                                 </div>
                                 <div className="col-4">
-                                    <img className="product-page-imgtab" src={images[this.state.product.image]} alt="productimg2"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg2"  />
                                 </div>
                                 <div className="col-4 mb-4">
-                                    <img className="product-page-imgtab" src={images[this.state.product.image]} alt="productimg3"  />
+                                    <img className="product-page-imgtab" src={this.state.product.image} alt="productimg3"  />
                                 </div>
                             </div>
                     </div>

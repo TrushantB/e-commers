@@ -56,7 +56,7 @@ class HandmadeCards extends Component{
                                 this.props.handMadeCards.length &&  this.props.handMadeCards.map((product) => {
                                     return(
                                     <div key={product.id}><img className='img-fluid handmade-page-img' 
-                                        src={images[product.image]}
+                                        src={product.image}
                                         alt={product.title}/>
                                     </div>
                                     )
