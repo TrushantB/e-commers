@@ -18,7 +18,7 @@ class HandmadeCardDetails extends Component {
     render() {
         let cardDetails=this.props.Products.HandmadeCard;
         return (
-            <div className="col-md-5 ml-5">
+            <div className="col-md-5 ml-5 handmade-discription">
               {
                 this.props.product && 
                 <>
@@ -31,7 +31,7 @@ class HandmadeCardDetails extends Component {
                       <h3 className="handmade-price my-3">{this.props.product.price}$</h3>
 
 
-                  <div className="d-flex mt-4">
+                  <div className="d-flex mt-4 handmade-btn">
                   
                   <div className="">
                               <button  className="btn m-1 cst-btn explore">

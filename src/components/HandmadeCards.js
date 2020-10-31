@@ -50,7 +50,7 @@ class HandmadeCards extends Component{
             //     </div>
             <div>
                 <div className='row align-items-center handmade-contentwrap'>
-                    <div className="col-md-6">
+                    <div className="handmadeimg-wrapper col-sm-12 col-md-6">
                         <Slider {...settings}>
                             {
                                 this.props.handMadeCards.length &&  this.props.handMadeCards.map((product) => {

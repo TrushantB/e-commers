@@ -34,7 +34,7 @@ class Header extends Component{
         return(
             <nav className='container'>
                 <div className='row align-items-center header-nav'>
-                <div onClick={() => this.handleSidenav()}>
+                <div className="nav-icon" onClick={() => this.handleSidenav()}>
                      <img src= {require('../images/nav-icon.png') }/> 
                 </div>
 
@@ -79,22 +79,24 @@ class Header extends Component{
                             <button type="submit" className="btn btn-text position-absolute btn-search" 
                             onClick={() => this.props.searchText(this.state.searchText)}>
                                 <Link to="/search">
-                                    <img src={require('../images/search-icon.png')}/>
+                                    <img className='search-icon' src={require('../images/search-icon.png')}/>
                                 </Link>
                             </button>
                         </form>
                     </div>
-                    <Link to='/login' className='btn float-right user'>
-                       <img src={require('../images/user.png')}/>
-                        <span>login</span>
-                    </Link>
-                    <Link to='/cart' className='btn float-right nav-cart position-relative'>
-                        <i 
-                            className="fa fa-shopping-cart fa-fw" 
-                            aria-hidden="true" 
-                        />
-                        <span className="badge badge-light position-absolute">{this.props.cart.length}</span>
-                    </Link>
+                    <div className= "headerbtn-wrap" >
+                        <Link to='/login' className='btn float-right user'>
+                        <img src={require('../images/user.png')}/>
+                            <span className="login-text">login</span>
+                        </Link>
+                        <Link to='/cart' className='btn float-right nav-cart position-relative'>
+                            <i 
+                                className="fa fa-shopping-cart fa-fw" 
+                                aria-hidden="true" 
+                            />
+                            <span className="badge badge-light position-absolute">{this.props.cart.length}</span>
+                        </Link>
+                    </div>
 
                     
                 </div>

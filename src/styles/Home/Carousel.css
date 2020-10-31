@@ -126,20 +126,45 @@ slider-wrapper {
   color: #2E3871;
   line-height: 33px;
   font-weight: 700;
-  margin-top: 71px;
   margin-bottom: 18px;
   font-family: 'Raleway', sans-serif; 
 
 }
 .featurep-navigation{
-  margin-top: 71px;
-  margin-right: 15px;
+  margin-right: -12px;
+}
+.featurep-navigation button:focus{
+    outline:none;
 }
 
 .banner-image-wrapper {
   /* display:block; */
   width:100%;
-  height:500px;
   /* background-color:rgb(33, 48, 38); */
   /* overflow:scroll; */
+}
+
+.handmade-page-img {
+  width: 100%;
+  height: auto;
+}
+.handmadeinfo-list{
+  color: #5C737D;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.41px;
+  line-height: 29.12px;
+  text-decoration: none;
+  list-style-type:none;
+  padding: 0;
+}
+.handmade-price{
+  font-size: 36px;
+  color: #2E2E2E;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.banner-text{
+  left :4%;
 }

@@ -14,26 +14,23 @@ import { getProduct } from '../services/product'
   render() {
     return (
       <div className=' app'>
-        
-        
-        <div className="container-fluid">
-        
+        <div className="container">
         <Carousel />
-        <div className='container'> 
           <div className='feature-wrapper'>
-            <div className="py-4">
+            <div className="py-2">
               <ProductList  products={this.props.featureProducts}/>
-            </div>
           </div>
           <div className='category-wrapper py-3'>
-            <h3 className='cat-title'>Category</h3>
-            <CategoryList />
+            <div className="row">
+                <h3 className='cat-title mb-4'>Category</h3>
+                <CategoryList />
+            </div>
           </div>
           <div className='handmade-wrapper py-4'>
             <h3 className='title mb-3'>Handmade Cards</h3>
             <HandmadeCards />
+          </div> 
           </div>
-        </div>  
         </div>
       </div>
     );

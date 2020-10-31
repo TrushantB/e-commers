@@ -2,6 +2,7 @@ import React,{ Component} from 'react';
 import {connect} from 'react-redux';
 
 import ProductItem from './ProductItem';
+import '../styles/category/handmadecardlist.css'
 
 
 class HandmadeList extends Component{
@@ -28,7 +29,7 @@ class HandmadeList extends Component{
 
     render(){
         return(
-            <ul className='row product-list'>
+            <ul className='row product-list handmadecard-list'>
                 {this.createGrid()}
             </ul>
         );

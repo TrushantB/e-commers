@@ -1,7 +1,8 @@
 import React,{ Component} from 'react';
 import {connect} from 'react-redux';
 import CategoryItem from './CategoryItem';
-import { getCategories } from '../services/category'
+import { getCategories } from '../services/category';
+import '../styles/category/categorylist.css'
 
 
 class CategoryList extends Component{
@@ -21,7 +22,7 @@ class CategoryList extends Component{
         this.productItems = this.createProduct(this.props.categoryData);
         let row=[];
         for(let j=0; j<this.productItems.length; j++){
-            row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
+            row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-6 col-lg-3 product-item">
                 {this.productItems[j]}
             </li>)
         }

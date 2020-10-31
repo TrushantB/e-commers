@@ -43,7 +43,15 @@ class ProductList extends Component{
                   slidesToShow: 3,
                   slidesToScroll: 3,
                   infinite: true,
-                  dots: true
+                  dots: false
+                }
+              },
+              
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
                 }
               },
               {
@@ -69,8 +77,8 @@ class ProductList extends Component{
             <div className="row">
               <div className='col-12'>
                 <div className="d-flex justify-content-between">
-                <h3 className='catogory-title mb-3'>Featured Products</h3>
-                  <div className="featurep-navigation">
+                <h3 className='catogory-title my-2'>Featured Products</h3>
+                  <div className="featurep-navigation my-2">
                     <button className="button-left  mb-2" onClick={this.previous}>
                       <i className="fa fa-angle-left pl-2 pr-2" aria-hidden="true"></i>
                     </button>
